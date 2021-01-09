@@ -1,0 +1,205 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Killua: Todo Commands</title>
+    <link rel="shortcut icon" type="image/png" href="https://i.ibb.co/pdL4Zmw/killua.webp" />
+    <link rel="apple-touch-icon" href="https://i.ibb.co/pdL4Zmw/killua.webp">
+    <meta name="description" content="ToDo commands || Killua">
+    <meta name="keywords" content="Killua, Kile, Alkuri, KileAlkuri, Killua.dev, discord, bot, SFW, hxh, hunter x hunter">
+    <meta name="author" content="N789EX, CirclR, and Kile Alkuri">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" crossorigin='anonymous'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" crossorigin='anonymous'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js" crossorigin='anonymous'></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" crossorigin='anonymous'></script>
+    <style>
+        #img1n {
+            background-image: url("https://i.ibb.co/ykzD5p0/33344c.png");
+            /* Full height */
+            height: 100%;
+            background-attachment: fixed;
+            /* Center and scale the image nicely */
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+        body {
+            background-color: white;
+            font: Verdana;
+            text-align: center;
+            max-width: 100%;
+        }
+        
+        #navbar {
+            height: 14.3%;
+        }
+        
+        req {
+            color: cornflowerblue
+        }
+        
+        ret {
+            color: red
+        }
+        
+        grt {
+            color: green
+        }
+        
+        put {
+            color: purple
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark" id='navbar'>
+        <!-- Brand -->
+        <a class="navbar-brand" href="#"><img src="https://i.ibb.co/pdL4Zmw/killua.webp" alt="Logo is supposed to be here but it isn't :(" style="width:40px;"></a>
+
+        <!-- Toggler/collapsibe Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="https://killua.dev">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://discord.com/oauth2/authorize?client_id=756206646396452975&scope=bot&permissions=1342531648">Add To Server</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://discord.gg/FdErZCd">Discord</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div id='img1n' style='display:table; width:100%;'>
+        <div style='display:table-cell; width:100%;'><br><br>
+            <script>
+                if (screen.availHeight >= 750) {
+                    document.write('<br>');
+                }
+                if (screen.availHeight >= 1500) {
+                    document.write('<br><br>')
+                }
+            </script>
+            <h1 id="txt1" style='font-family:"Times New Roman", Times, Serif;text-align: center; color:white;'>Killua: Todo Commands</h1><br><br>
+            <script>
+                if (screen.availHeight >= 750) {
+                    document.write('<br>');
+                }
+                if (screen.availHeight >= 1500) {
+                    document.write('<br><br>')
+                }
+            </script>
+        </div>
+    </div><br>
+    <script>
+        let sh = screen.availHeight;
+        for (var i = 1; i <= 2; i++) {
+            if (sh / i >= 750) {
+                document.write('<br>');
+            }
+        }
+    </script>
+    <h2>Commands</h2>
+    <br><br><br>
+    <h5><i style='background-color:lightgray; font:italic;'>k!todo edit [list id]</i></h5><br>
+    <h6 style='color:cornflowerblue'>Required: being owner or having edit permissions to the list</h6><br>
+    <p>Allows you to edit a list and enables the use of lots of commands.</p>
+    <br><br>
+    <h5><i style='background-color:lightgray; font:italic;'>k!todo view <grt>[todo-list-id]</grt></i></h5><br>
+    <p><span style='color:green'>In edit mode:</span><br>Shows the entries of the current list.<br><span style='color:red'>Not in edit mode:</span><br><span style='color:cornflowerblue'>Required: Being the owner or having viewer or edit permissions to the list</span><br>Shows
+        the todo list with the specified id</p><br><br>
+    <h5><i style='background-color:lightgray; font:italic;'>k!todo info <grt>[todo-task-number-optional</grt>/<ret>todo-list-id] [optional-todo-task-number]</ret></i></h5><br>
+    <p>
+        <grt>In edit mode:</grt><br>Gives insights about the todo task specified or the current list if no argument is provided<br>
+        <ret>Not in edit mode:</ret><br>
+        <req>Required: being owner or having viewer or edit permissions to the list</req><br>Gives info about either the list or one of it's todo tasks if you specify it
+    </p>
+    <br><br>
+    <h5><i style='background-color:lightgray; font:italic;'>k!todo invite [mention/user-id] <put>[type]</put></i></h5><br>
+    <p>
+        <grt>Only available in editor mode</grt><br>
+        <put>Available types: editor, viewer</put><br>Sends the specified user a DM if possible and if they accept the invitation, they get the specified permission for that todo list</p><br><br>
+    <h5><i style='background-color:lightgray; font:italic;'>k!todo kick <grt>[mention/user-id]</grt></i></h5><br>
+    <p>
+        <grt>Only available in editor mode</grt><br>
+        <req>Requires list owner permissions</req><br>Takes every permission that user had in the current list</p><br><br>
+    <h5><i style='background-color:lightgray; font:italic;'>k!todo buy <put>[type]</put></i></h5><br>
+    <p>
+        <grt>Only available in editor mode</grt><br>
+        <put>Available types: thumbnail, color, space</put><br>You are able to purchase extra space, a custom color or a custom thumbnail for your list with this command</p>
+    <br><br>
+    <h5><i style='background-color:lightgray; font:italic;'>k!todo shop</i></h5>
+    <p><br>Displays a menu of how much what you can buy is</p><br><br>
+    <h5><i style='background-color:lightgray; font:italic;'>k!todo exit</i></h5><br>
+    <p>
+        <grt>Only available in editor mode</grt><br>Exits the current list you are editing</p><br><br>
+    <h5><i style='background-color:lightgray; font:italic;'>k!todo status</i></h5>
+    <p><br>
+        <grt>Only available in editor mode</grt><br>Enables you to change the todo-list's status you previously specified in todo create</p><br><br>
+    <h5><i style='background-color:lightgray; font:italic;'>k!todo name</i></h5><br>
+    <p>
+        <grt>Only available in editor mode</grt><br>Enables you to change the todo-list's name you previously specified in todo create</p><br><br>
+    <h5><i style='background-color:lightgray; font:italic;'>k!todo autodelete</i></h5>
+    <p><br>
+        <grt>Only available in editor mode</grt><br>Enables you to change the todo-list's setting if it should auto-delete a todo that has been marked as "done" you previously specified in todo create</p>
+    <br><br>
+    <h5><i style='background-color:lightgray; font:italic;'>k!todo color</i></h5><br>
+    <p>
+        <grt>Only available in editor mode</grt><br>Enables you to change the todo-list's color if you have purchased it with todo buy color</p><br><br>
+    <h5><i style='background-color:lightgray; font:italic;'>k!todo thumbnail</i></h5>
+    <p>
+        <grt>Only available in editor mode</grt><br>Enables you to change the todo list's color if you have purchased it with todo buy thumbnail</p><br><br>
+    <h5><i style='background-color:lightgray; font:italic;'>k!todo custom_id</i></h5><br>
+    <p>
+        <grt>Only available in editor mode</grt><br>Enables you to change the todo-list's color if you have set it in todo create (only possible if you are a premium supporter)</p><br><br>
+    <h5><i style='background-color:lightgray; font:italic;'>k!todo remove <grt>[todo-task-number]</grt></i></h5><br>
+    <p>
+        <grt>Only available in editor mode</grt><br>Removes the todo task with the specified number</p><br><br>
+    <h5><i style='background-color:lightgray; font:italic;'>k!todo add <grt>[todo]</grt></i></h5><br>
+    <p>
+        <grt>Only available in editor mode</grt><br>Adds "todo" to your todos of your current list</p><br><br>
+    <h5><i style='background-color:lightgray; font:italic;'>k!todo mark <grt>[todo-task-number] [marked-as]</grt></i></h5><br>
+    <p>
+        <grt>Only available in editor mode</grt><br>Marks the todo task specified with the comment specified. If the comment is "done" and you specified that a task should be deleted when it’s done, this will delete the task. If the comment is "-rm" the comment
+        to that todo task is entirely removed</p>
+    <br><br>
+    <h5><i style='background-color:lightgray; font:italic;'>k!todo assign <grt>[todo-task-number] [mention/user-id] [optional-rm]</grt></i></h5><br>
+    <p>
+        <grt>Only available in editor mode</grt><br>
+        <req>Required permissions of user you assign the task to: editor or owner</req><br>Assigns a todo task to a team member who will be informed through dms. A todo task can have multiple people assigned to it. If you decide to remove a user from a task,
+        use the command as normal and add "-rm" at the end</p>
+    <br><br>
+    <h5><i style='background-color:lightgray; font:italic;'>k!todo delete</i></h5><br>
+    <p>
+        <grt>Only available in editor mode</grt><br>
+        <req>Requires owner permissions of the current list</req><br>Deletes the current list you are on</p><br><br>
+    <h5><i style='background-color:lightgray; font:italic;'>k!todo lists</i></h5><br>
+    <p>Gives you a list of what lists you own, can view and edit so you don't have to memorize the IDs</p>
+    <script>
+        let sh = screen.availHeight;
+        for (var i = 1; i <= 2; i++) {
+            if (sh / i >= 1000) {
+                document.write('<br>');
+            }
+        }
+    </script><br>
+
+</body>
+<h1></h1>
+
+</html>
