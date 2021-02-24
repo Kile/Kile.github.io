@@ -32,14 +32,73 @@
         }
         
         body {
-            background-color: white;
+            background-color: #151515;
             font: Verdana;
             text-align: center;
             max-width: 100%;
+            color: white;
         }
         
         #navbar {
             height: 14.3%;
+        }
+        
+        #Kile {
+            margin: 0px auto;
+        }
+        
+        .flip-card {
+            background-color: transparent;
+            width: 300px;
+            height: 300px;
+            perspective: 1000px;
+            margin: 0px auto;
+            display: flex;
+        }
+        
+        .container-flex {
+            display: flex;
+            justify-content: center;
+        }
+        
+        #wrapper {
+            width: 960px;
+            margin: 0 auto;
+        }
+        
+        .flip-card-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            transition: transform 0.8s;
+            transform-style: preserve-3d;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        }
+        
+        .flip-card:hover .flip-card-inner {
+            transform: rotateY(180deg);
+        }
+        
+        .flip-card-front,
+        .flip-card-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+        }
+        
+        .flip-card-front {
+            background-color: #bbb;
+            color: black;
+        }
+        
+        .flip-card-back {
+            background-color: #33344c;
+            color: white;
+            padding: 10px;
+            transform: rotateY(180deg);
         }
     </style>
 </head>
@@ -98,8 +157,63 @@
             }
         }
     </script>
-    <h2>Contributors</h2>
-    <h3>Kile#0606</h3><br>
+    <h2>Contributors</h2><br><br><br>
+    <div class="flip-card" id='Kile'>
+        <div class="flip-card-inner">
+            <div class="flip-card-front">
+                <img src="https://cdn.discordapp.com/avatars/606162661184372736/989a50f1f87a9d5b25b6e8f81156b57f.webp?size=1024" alt="Avatar" style="width:300px;height:300px;">
+            </div>
+            <div class="flip-card-back">
+                <h1>Kile#0606</h1><br>
+                <p>Hi, I'm the dev of Killua and aspiring developer, I have knowledge in js, ts, python and c#. If you have <b>any</b> questions about python, Killua or discord in general, feel free to contact me (Kile#0606)</p>
+            </div>
+        </div>
+    </div>
+    <br><br>
+    <div id='wrapper'>
+        <div style="width: 300px; float:left; height:300px; background:#33344c; margin:10px; align-items:center;" class='container-flex'>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="https://cdn.discordapp.com/avatars/481812817628889102/d1a7036ffbddf68e5e748fe275aabd3d.webp?size=1024" alt="Avatar" style="width:300px;height:300px;">
+                    </div>
+                    <div class="flip-card-back">
+                        <h2>Clash Crafter#7370</h2><br>
+                        <p>Description: I am a 15 year old boy from Germany. I love games and PCs. In my spare time I program with C#, TypeScript and Python and I would like to study computer science.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--<br><br>-->
+        <div style="width: 300px; float:left; height:300px; background:#33344c; margin:10px" class='container-flex'>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="https://avatars.githubusercontent.com/u/39541871?v=4" alt="Avatar" style="width:300px;height:300px;">
+                    </div>
+                    <div class="flip-card-back">
+                        <h2>funny man#7321</h2><br><br>
+                        <p>Someone trying to make something interesting for the world to enjoy. Back end developer and tinkerer. Looking for a job.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--<br><br>-->
+        <div style="width: 300px; float:left; height:300px; background:#33344c; margin:10px" class='container-flex'>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="https://cdn.discordapp.com/avatars/258265415770177536/c42b285256754c4d68e4bb0edf688db1.webp?size=1024" alt="Avatar" style="width:300px;height:300px;">
+                    </div>
+                    <div class="flip-card-back">
+                        <h1>WhoAmI#0001</h1><br>
+                        <p>Hello. I am a developer from the US who mainly specializes in websites. I also code in other languages, such as JS, Python, etc.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--<h3>Kile#0606</h3><br>
     <p>Hi, I'm the dev of Killua and aspiring developer, I have knowledge in js, ts, python and c#. If you have <b>any</b> questions about python, Killua or discord in general, feel free to contact me (Kile#0606)</p>
     <br><br>
     <h3>Clash Crafter#7370</h3><br>
@@ -116,7 +230,7 @@
                 document.write('<br>');
             }
         }
-    </script><br>
+    </script><br>-->
 
 </body>
 <h1></h1>
