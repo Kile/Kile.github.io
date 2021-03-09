@@ -32,14 +32,38 @@
         }
         
         body {
-            background-color: white;
+            background-color: #151515;
             font: Verdana;
             text-align: center;
             max-width: 100%;
+            color: whitesmoke;
         }
         
         #navbar {
             height: 14.3%;
+        }
+        
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+            background-color: #33344c;
+            color: white;
+        }
+        
+        td,
+        th {
+            border: 1px solid #44455d;
+            text-align: left;
+            padding: 8px;
+        }
+        
+        tr:hover {
+            background-color: #22233b;
+        }
+        
+        h1 {
+            color: green;
         }
     </style>
 </head>
@@ -102,7 +126,327 @@
     <br><br>
     <h3>Command Groups</h3><br>
     <p>Killua has Moderation, Fun, Economy, and Miscellaneous commands.</p><br><br>
-    <h3>Moderation Commands</h3><br>
+
+    <table id='moderation'>
+        <tr>
+            <th>Moderation Commands</th>
+        </tr>
+        <tr>
+            <th>Command</th>
+            <th>Description</th>
+            <th>Format</th>
+        </tr>
+
+        <tr>
+            <td>prefix</td>
+            <td>Sets a new prefix for Killua for the server, can only be used by server admins.</td>
+            <td>k!prefix [string]</td>
+        </tr>
+        <tr>
+            <td>ban</td>
+            <td>Bans a member and deletes their messages from over the last 24 hours.</td>
+            <td>k!ban [user] [optional reason]</td>
+        </tr>
+        <tr>
+            <td>kick</td>
+            <td>Kicks the member specified.</td>
+            <td>k!kick [user] [optional reason]</td>
+        </tr>
+        <tr>
+            <td>unban</td>
+            <td>Unbans the the user. Please specify the ID or the name and tag.</td>
+            <td>k!unban [userId or Nameandtag]</td>
+        </tr>
+        <tr>
+            <td>mute</td>
+            <td>Mutes a user for the given amount of time you specify, or unlimited.</td>
+            <td>k!mute [user] [optional time] [optional reason]</td>
+        </tr>
+        <tr>
+            <td>unmute</td>
+            <td>Unmutes the user.</td>
+            <td>k!unmute [user] [optional reason]</td>
+        </tr>
+    </table><br><br>
+    <table id='fun'>
+        <tr>
+            <th>Fun Commands</th>
+        </tr>
+        <tr>
+            <th>Command</th>
+            <th>Description</th>
+            <th>Format</th>
+        </tr>
+        <tr>
+            <td>quote</td>
+            <td>Send a screenshot of a user saying what you defined. Use -c at the start of text for compact mode or -l for light mode or both.</td>
+            <td>k!quote [user] [text]</td>
+        </tr>
+        <tr>
+            <td>cmm</td>
+            <td>Sends the <i>change my mind</i> meme with the text you defined.</td>
+            <td>k!cmm [text]</td>
+        </tr>
+        <tr>
+            <td>hug</td>
+            <td>Hugs the user specified.</td>
+            <td>k!hug [user]</td>
+        </tr>
+        <tr>
+            <td>pat</td>
+            <td>Pats the specified user, similar to the hug command.</td>
+            <td>k!pat [user]</td>
+        </tr>
+        <tr>
+            <td>topic</td>
+            <td>Get a topic to talk about with this command.</td>
+            <td>k!topic</td>
+        </tr>
+        <tr>
+            <td>calc</td>
+            <td>Calculates the specified mathematical expression.</td>
+            <td>k!calc</td>
+        </tr>
+        <tr>
+            <td>translate</td>
+            <td>Translates the text to the given target language.</td>
+            <td>k!translate [source language or auto] [target language] [text]</td>
+        </tr>
+        <tr>
+            <td>8ball</td>
+            <td>Killua will answer the question.</td>
+            <td>k!8ball [question]</td>
+        </tr>
+        <tr>
+            <td>avatar</td>
+            <td>Retrieves the avatar of the user.</td>
+            <td>k!avatar [user]</td>
+        </tr>
+        <tr>
+            <td>book</td>
+            <td>Gets information about the book.</td>
+            <td>k!book [book title]</td>
+        </tr>
+        <tr>
+            <td>emojaic</td>
+            <td>Changes the provided image to emojis (try this!)</td>
+            <td>k!emojaic [user, id, or link]</td>
+        </tr>
+        <tr>
+            <td>image</td>
+            <td>Gives you the best DuckDuckGo images for the title.</td>
+            <td>k!image [title]</td>
+        </tr>
+        <tr>
+            <td>f</td>
+            <td>To get a list of supported types, enter the command without arguments.</td>
+            <td>k!f [type] [user, id, or link]</td>
+        </tr>
+
+    </table><br><br>
+    <table id='economy'>
+        <tr>
+            <th>Economy Commands</th>
+        </tr>
+        <tr>
+            <th>Command</th>
+            <th>Description</th>
+            <th>Format</th>
+        </tr>
+        <tr>
+            <td>daily</td>
+            <td>Gives you your daily Jenny.</td>
+            <td>k!daily</td>
+        </tr>
+        <tr>
+            <td>rps</td>
+            <td>Challenges someone to a game of rock paper scissors. You can make bets.</td>
+            <td>k!rps [user] [optional bet]</td>
+        </tr>
+        <tr>
+            <td>profile</td>
+            <td>Shows info on a specified user.</td>
+            <td>k!profile [user]</td>
+        </tr>
+        <tr>
+            <td>give</td>
+            <td>Gives another user the specified amount of Jenny.</td>
+            <td>k!give [user] [amount]</td>
+        </tr>
+        <tr>
+            <td>server</td>
+            <td>Gives you information about the current server.</td>
+            <td>k!server</td>
+        </tr>
+        <tr>
+            <td>bal</td>
+            <td>Shows the balance of the specified user.</td>
+            <td>k!bal [optional user]</td>
+        </tr>
+    </table><br><br>
+    <table id='todo'>
+        <tr>
+            <th>Todo Commands</th>
+        </tr>
+        <tr>
+            <th>Command</th>
+            <th>Description</th>
+            <th>Format</th>
+        </tr>
+        <tr>
+            <td>create</td>
+            <td>Creates a todo-list with an interactive and easy setup.</td>
+            <td>k!todo create</td>
+        </tr>
+        <tr>
+            <td>edit</td>
+            <td>Allows you to edit a list and enables the use of lots of commands. Requires being owner or having edit permissions.</td>
+            <td>k!todo edit [list id]</td>
+        </tr>
+        <tr>
+            <td>view</td>
+            <td>When in edit mode, will show the entries of the current list you are editing. When not in edit mode, it shows the todo list with the specified ID (must have sufficient permissions).</td>
+            <td>k!todo view [list id]</td>
+        </tr>
+        <tr>
+            <td>info</td>
+            <td>Gives insights about the todo task specified or the current list if no argument is provided, when in edit mode. When not in edit mode, it gives information on the list or a task, if specified (requires sufficient permissions).</td>
+            <td>k!todo info [todo task number (optional) or todo list ID] [optional todo task number]</td>
+        </tr>
+        <tr>
+            <td>invite</td>
+            <td>Sends the specified user a DM if possible and if they accept the invitation, they get the specified permission for that todo list. Only available in editor mode. Available types: editor, viewer.</td>
+            <td>k!todo invite [mention or user id] [type]</td>
+        </tr>
+        <tr>
+            <td>kick</td>
+            <td>Only available in editor mode. Requires list owner permissions. Takes every permission the specified user had in the current list.</td>
+            <td>k!todo kick [mention or user id]</td>
+        </tr>
+        <tr>
+            <td>buy</td>
+            <td>You are able to purchase extra space, a custom color or a custom thumbnail for your list with this command. Only available in editor mode. Available types: thumbnail, color, space.</td>
+            <td>k!todo buy [type]</td>
+        </tr>
+        <tr>
+            <td>shop</td>
+            <td>Displays a menu of how much what you can buy is.</td>
+            <td>k!todo shop</td>
+        </tr>
+        <tr>
+            <td>exit</td>
+            <td>Exits the current list you are editing. Only available in editor mode.</td>
+            <td>k!todo exit</td>
+        </tr>
+        <tr>
+            <td>status</td>
+            <td>Only available in editor mode. Enables you to change the todo-list's status you previously specified in todo create.</td>
+            <td>k!todo status</td>
+        </tr>
+        <tr>
+            <td>name</td>
+            <td>Only available in editor mode. Enables you to change the todo-lists's name you previously specified in todo create.</td>
+            <td>k!todo name</td>
+        </tr>
+        <tr>
+            <td>autodelete</td>
+            <td>Only available in editor mode. Enables you to change the todo-list's setting if it should auto-delete a todo that has been marked as "done" you previously specified in todo-create.</td>
+            <td>k!todo autodelete</td>
+        </tr>
+        <tr>
+            <td>color</td>
+            <td>Only available in editor mode. Enables you to change the todo-list's color if you have purchased it with todo buy color.</td>
+            <td>k!todo color</td>
+        </tr>
+        <tr>
+            <td>thumbnail</td>
+            <td>Only available in editor mode. Enables you to change the todo list's color if you have purchased it with todo buy thumbnail.</td>
+            <td>k!todo thumbnail</td>
+        </tr>
+        <tr>
+            <td>custom_id</td>
+            <td>Only available in editor mode. Enables you to change the todo-list's ID if you have it set in todo create (only possible if you are premium supporter).</td>
+            <td>k!todo custom_id</td>
+        </tr>
+        <tr>
+            <td>remove</td>
+            <td>Only available in editor mode. Removes the todo task with the specified number.</td>
+            <td>k!todo remove [todo-task-number]</td>
+        </tr>
+        <tr>
+            <td>add</td>
+            <td>Only available in editor mode. Adds "todo" to your todos of your current list.</td>
+            <td>k!todo add [todo]</td>
+        </tr>
+        <tr>
+            <td>mark</td>
+            <td>Only avialable in editor mode. Marks the todo task specified with the comment specified. If the comment is "done" and you specified that a task should be deleted when it’s done, this will delete the task. If the comment is "-rm" the comment
+                to that todo task is entirely removed.</td>
+            <td>k!todo mark [todo-task-number] [marked-as]</td>
+        </tr>
+        <tr>
+            <td>assign</td>
+            <td>Only available in editor mode. Required permissions of user you assign the tast to: editor or owner. Assigns a todo task to a team member who will be informed through dms. A todo task can have multiple people assigned to it. If you decide
+                to remove a user from a task, use the command as normal and add "-rm" at the end.
+                <td>k!todo assign [todo task number] [mention/user id] [optional-rm]</td>
+        </tr>
+        <tr>
+            <td>delete</td>
+            <td>Only available in editor mode. Requires owner permissions of the current list. Deletes the current list you are on.</td>
+            <td>k!todo delete</td>
+        </tr>
+        <tr>
+            <td>lists</td>
+            <td>Gives you a list of what you own, view, and edit so you don't have to memorize the IDs.</td>
+            <td>k!todo lists</td>
+        </tr>
+    </table><br><br>
+    <table id='other'>
+        <tr>
+            <th>Other Commands</th>
+        </tr>
+        <tr>
+            <th>Command</th>
+            <th>Description</th>
+            <th>Format</th>
+        </tr>
+        <tr>
+            <td>info</td>
+            <td>Gives you info on the bot.</td>
+            <td>k!info</td>
+        </tr>
+        <tr>
+            <td>patreon</td>
+            <td>Gives you the link to the patreon.</td>
+            <td>k!patreon</td>
+        </tr>
+        <tr>
+            <td>invite</td>
+            <td>Gives you the invite link to the bot.</td>
+            <td>k!profile [user]</td>
+        </tr>
+        <tr>
+            <td>codeinfo</td>
+            <td>Gives you insights to a command.</td>
+            <td>k!codeinfo [command]</td>
+        </tr>
+        <tr>
+            <td>permissions</td>
+            <td>Killua lists his permissions on the server.</td>
+            <td>k!permissions</td>
+        </tr>
+        <tr>
+            <td>bug</td>
+            <td>You can report bugs with this command, abuse or spam will result in being blacklisted.</td>
+            <td>k!bug [command name/other] [bug]</td>
+        </tr>
+        <tr>
+            <td>fb</td>
+            <td>Send feeback with this command. Abuse or spam will result in being blacklisted.</td>
+            <td>k!fb [type of feedback] [feedback]</td>
+        </tr>
+    </table>
+    <!--<h3>Moderation Commands</h3><br>
     <p><span style='background-color:lightgray; font:italic;'><i>k!prefix [string]</i></span> - Sets a new prefix for Killua for the server, can only be used by server admins.<br><span style='background-color:lightgray; font:italic;'><i>k!ban [user] [optional reason]</i></span>        - Bans a member and deletes their messages from over the last 24 hours.<br><i style='background-color:lightgray; font:italic;'>k!unban [user or name and tag]</i> - Unbans the specified user.
         <br><i style='background-color:lightgray; font:italic;'>k!mute [user] [optional time in minutes] [optional reason]</i> - Mutes a user. If a time is not specified, the user will be muted for an unlimited amount of time.<br><i style='background-color:lightgray; font:italic;'>
     k!unmute [user] [optional reason]</i> - Unmutes the specified user.</p><br><br>
@@ -136,7 +480,7 @@
         <br><i style='background-color:lightgray; font:italic;'>k!codeinfo [command]</i> - Gives you insights on a command.<br><i style='background-color:lightgray; font:italic;'>k!permissions</i> - Will list the permissions Killua has on the server.<br>
         <i style='background-color:lightgray; font:italic;'>k!bug [command name or other] [description]</i> - You can report bugs with this command. Abusing it will get you blacklisted.
         <br><i style='background-color:lightgray; font:italic;'>k!fp [type of feedback] [feedback]</i> - Send feedback directly to Kile! Abuse or spam of this command will result in blacklisting.
-    </p>
+    </p>-->
     <script>
         let sh = screen.availHeight;
         for (var i = 1; i <= 2; i++) {
