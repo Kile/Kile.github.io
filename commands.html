@@ -44,6 +44,8 @@
         }
         
         table {
+            margin-left: 10px;
+            border-radius: 5px;
             font-family: arial, sans-serif;
             border-collapse: collapse;
             width: 100%;
@@ -53,7 +55,8 @@
         
         td,
         th {
-            border: 1px solid #44455d;
+            border: 1px solid #77788f;
+            /*66677f*/
             text-align: left;
             padding: 8px;
         }
@@ -64,6 +67,14 @@
         
         h1 {
             color: green;
+        }
+        
+        #tocm:hover {
+            background-color: #33344c;
+        }
+        
+        .tocs:hover {
+            cursor: pointer;
         }
     </style>
 </head>
@@ -126,10 +137,29 @@
     <br><br>
     <h3>Command Groups</h3><br>
     <p>Killua has Moderation, Fun, Economy, and Miscellaneous commands.</p><br><br>
-
-    <table id='moderation'>
+    <table id='toc'>
+        <tr id='tocm'>
+            <th style='text-align: center;'>Table of Contents</th>
+        </tr><noscript>
         <tr>
-            <th>Moderation Commands</th>
+            <th style='text-align: center;'>You Don't Have JS Enabled! The links below won't work as they operate on JS.</th>
+        </tr></noscript>
+        <tr class='tocs' onclick="location.href='#moderation'">
+            <td style='text-align: center;'>Moderation Commands</td>
+        </tr>
+        <tr class='tocs' onclick="location.href='#fun'">
+            <td style='text-align: center;'>Fun Commands</td>
+        </tr>
+        <tr class='tocs' onclick="location.href='#economy'">
+            <td style='text-align: center;'>Economy Commands</td>
+        </tr>
+        <tr class='tocs' onclick="location.href='#other'">
+            <td style='text-align: center;'>Miscellaneous Commands</td>
+        </tr>
+    </table><br><br id='moderation'>
+    <table>
+        <tr>
+            <th style='text-align: center;'>Moderation Commands</th>
         </tr>
         <tr>
             <th>Command</th>
@@ -167,10 +197,10 @@
             <td>Unmutes the user.</td>
             <td>k!unmute [user] [optional reason]</td>
         </tr>
-    </table><br><br>
-    <table id='fun'>
+    </table><br><br id='fun'>
+    <table>
         <tr>
-            <th>Fun Commands</th>
+            <th style='text-align: center;'>Fun Commands</th>
         </tr>
         <tr>
             <th>Command</th>
@@ -243,10 +273,10 @@
             <td>k!f [type] [user, id, or link]</td>
         </tr>
 
-    </table><br><br>
-    <table id='economy'>
+    </table><br><br id='economy'>
+    <table>
         <tr>
-            <th>Economy Commands</th>
+            <th style='text-align: center;'>Economy Commands</th>
         </tr>
         <tr>
             <th>Command</th>
@@ -283,10 +313,10 @@
             <td>Shows the balance of the specified user.</td>
             <td>k!bal [optional user]</td>
         </tr>
-    </table><br><br>
-    <table id='todo'>
+    </table><br><br id='todo'>
+    <table>
         <tr>
-            <th>Todo Commands</th>
+            <th style='text-align: center;'>Todo Commands</th>
         </tr>
         <tr>
             <th>Command</th>
@@ -400,10 +430,10 @@
             <td>Gives you a list of what you own, view, and edit so you don't have to memorize the IDs.</td>
             <td>k!todo lists</td>
         </tr>
-    </table><br><br>
-    <table id='other'>
+    </table><br><br id='other'>
+    <table>
         <tr>
-            <th>Other Commands</th>
+            <th style='text-align: center;'>Other Commands</th>
         </tr>
         <tr>
             <th>Command</th>
