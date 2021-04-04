@@ -189,6 +189,9 @@
             <tr class='tocs' onclick="location.href='#todo'">
                 <td style='text-align: center;'>Todo Commands</td>
             </tr>
+            <tr class='tocs' onclick="location.href='#gic'">
+                <td style='text-align: center;'>Card Commands</td>
+            </tr>
             <tr class='tocs' onclick="location.href='#other'">
                 <td style='text-align: center;'>Miscellaneous Commands</td>
             </tr>
@@ -252,16 +255,6 @@
                 <th>Format</th>
             </tr>
             <tr>
-                <td>quote</td>
-                <td>Send a screenshot of a user saying what you defined. Use -c at the start of text for compact mode or -l for light mode or both.</td>
-                <td>k!quote [user] [text]</td>
-            </tr>
-            <tr>
-                <td>cmm</td>
-                <td>Sends the <i>change my mind</i> meme with the text you defined.</td>
-                <td>k!cmm [text]</td>
-            </tr>
-            <tr>
                 <td>hug</td>
                 <td>Hugs the user specified.</td>
                 <td>k!hug [user]</td>
@@ -312,9 +305,55 @@
                 <td>k!image [title]</td>
             </tr>
             <tr>
-                <td>f</td>
-                <td>To get a list of supported types, enter the command without arguments.</td>
-                <td>k!f [type] [user, id, or link]</td>
+                <td>flag</td>
+                <td>Valid flags: asexual, aromantic, bisexual, pansexual, gay, lesbian, trans, nonbinary, genderfluid, genderqueer, polysexual, austria, belgium, botswana, bulgaria, ivory, estonia, france, gabon, gambia, germany, guinea, hungary, indonesia,
+                    ireland, italy, luxembourg, monaco, nigeria, poland, russia, romania, sierraleone, thailand, ukraine, yemen.</td>
+                <td>k!flag [flag] [user, id, or URL]</td>
+            </tr>
+            <tr>
+                <td>glitch</td>
+                <td>Tranform a users pfp into a glitchy gif!</td>
+                <td>k!glitch [user, id, or URL]</td>
+            </tr>
+            <tr>
+                <td>lego</td>
+                <td>Legofies an image.</td>
+                <td>k!lego [user, id, or URL]</td>
+            </tr>
+            <tr>
+                <td>snapchat</td>
+                <td>Valid filters: dog, dog2, dog3, pig, flowers, random</td>
+                <td>k!snapchat [filter] [user, id, or URL]</td>
+            </tr>
+            <tr>
+                <td>thonkify</td>
+                <td>Turn text into thonks!</td>
+                <td>k!thonkify [text]</td>
+            </tr>
+            <tr>
+                <td>screenshot</td>
+                <td>Screenshot the specified website!</td>
+                <td>k!screenshot [url]</td>
+            </tr>
+            <tr>
+                <td>sonic</td>
+                <td>Let sonic say anything you want!</td>
+                <td>k!sonic [text]</td>
+            </tr>
+            <tr>
+                <td>jpeg</td>
+                <td>Did you ever want to decrease image quality? Then this is the command for you!</td>
+                <td>k!jpeg [user, id, or URL]</td>
+            </tr>
+            <tr>
+                <td>google</td>
+                <td>Get the best results for a query the web has to offer.</td>
+                <td>k!google [query]</td>
+            </tr>
+            <tr>
+                <td>image</td>
+                <td>Search any image you want!</td>
+                <td>k!image [query]</td>
             </tr>
 
         </table>
@@ -483,7 +522,72 @@
                 <td>k!todo lists</td>
             </tr>
         </table>
-    </div><br><br id='other'>
+    </div><br><br id='gic'>
+    <table class='tt'>
+        <tr class='ttr'>
+            <th style='text-align: center;'>Card Commands</th>
+        </tr>
+    </table>
+    <div class='ct'>
+        <table>
+            <tr>
+                <th>Command</th>
+                <th>Description</th>
+                <th>Format</th>
+            </tr>
+            <tr>
+                <td>book</td>
+                <td>Allows you to take a look at your cards.</td>
+                <td>k!book [optional page number]</td>
+            </tr>
+            <tr>
+                <td>shop</td>
+                <td>Shows the current cards for sale.</td>
+                <td>k!shop</td>
+            </tr>
+            <tr>
+                <td>buy</td>
+                <td>Buy a card from the shop with this command.</td>
+                <td>k!buy [card id]</td>
+            </tr>
+            <tr>
+                <td>sell</td>
+                <td>Sell any amount of cards you own.</td>
+                <td>k!sell [card id] [optional amount]</td>
+            </tr>
+            <tr>
+                <td>swap</td>
+                <td>Allows you to swap cards from your free slots with the restrcited slots and the other way around.</td>
+                <td>k!swap [card id]</td>
+            </tr>
+            <tr>
+                <td>hunt</td>
+                <td>Go on a hunt! The longer you are on the hunt, the better the rewards!</td>
+                <td>k!hunt [end optional]</td>
+            </tr>
+            <tr>
+                <td>meet</td>
+                <td>Meet a user who has recently send a message in this channel to enable certain spell card effects.</td>
+                <td>k!meet [user]</td>
+            </tr>
+            <tr>
+                <td>give</td>
+                <td>If you're feeling generous give another user cards or jenny. Available types are jenny and card.</td>
+                <td>k!give [user] [type] [card id/amount]</td>
+            </tr>
+            <tr>
+                <td>discard</td>
+                <td>Discard a card you want to get rid of with this command.</td>
+                <td>k!discard [card id]</td>
+            </tr>
+            <tr>
+                <td>use</td>
+                <td>Use spell cards you own with this command! Focus on offense or defense, team up with your friends or steal their cards in their sleep!</td>
+                <td>k!use [card id or booklet] [required arguments]</td>
+            </tr>
+        </table>
+    </div><br>
+    <br id='other'>
     <table class='tt'>
         <tr class='ttr'>
             <th style='text-align: center;'>Other Commands</th>
