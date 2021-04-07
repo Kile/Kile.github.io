@@ -32,10 +32,11 @@
         }
         
         body {
-            background-color: white;
+            background-color: #151515;
             font: Verdana;
             text-align: center;
             max-width: 100%;
+            color: whitesmoke;
         }
         
         #navbar {
@@ -116,79 +117,79 @@
     </script>
     <h2>Commands</h2>
     <br><br><br>
-    <h5><i style='background-color:lightgray; font:italic;'>k!todo edit [list id]</i></h5><br>
+    <h5><i style='background-color:#121212; font:italic;'>k!todo edit [list id]</i></h5><br>
     <h6 style='color:cornflowerblue'>Required: being owner or having edit permissions to the list</h6><br>
     <p>Allows you to edit a list and enables the use of lots of commands.</p>
     <br><br>
-    <h5><i style='background-color:lightgray; font:italic;'>k!todo view <grt>[todo-list-id]</grt></i></h5><br>
+    <h5><i style='background-color:#121212; font:italic;'>k!todo view <grt>[todo-list-id]</grt></i></h5><br>
     <p><span style='color:green'>In edit mode:</span><br>Shows the entries of the current list.<br><span style='color:red'>Not in edit mode:</span><br><span style='color:cornflowerblue'>Required: Being the owner or having viewer or edit permissions to the list</span><br>Shows
         the todo list with the specified id</p><br><br>
-    <h5><i style='background-color:lightgray; font:italic;'>k!todo info <grt>[todo-task-number-optional</grt>/<ret>todo-list-id] [optional-todo-task-number]</ret></i></h5><br>
+    <h5><i style='background-color:#121212; font:italic;'>k!todo info <grt>[todo-task-number-optional</grt>/<ret>todo-list-id] [optional-todo-task-number]</ret></i></h5><br>
     <p>
         <grt>In edit mode:</grt><br>Gives insights about the todo task specified or the current list if no argument is provided<br>
         <ret>Not in edit mode:</ret><br>
         <req>Required: being owner or having viewer or edit permissions to the list</req><br>Gives info about either the list or one of it's todo tasks if you specify it
     </p>
     <br><br>
-    <h5><i style='background-color:lightgray; font:italic;'>k!todo invite [mention/user-id] <put>[type]</put></i></h5><br>
+    <h5><i style='background-color:#121212; font:italic;'>k!todo invite [mention/user-id] <put>[type]</put></i></h5><br>
     <p>
         <grt>Only available in editor mode</grt><br>
         <put>Available types: editor, viewer</put><br>Sends the specified user a DM if possible and if they accept the invitation, they get the specified permission for that todo list</p><br><br>
-    <h5><i style='background-color:lightgray; font:italic;'>k!todo kick <grt>[mention/user-id]</grt></i></h5><br>
+    <h5><i style='background-color:#121212; font:italic;'>k!todo kick <grt>[mention/user-id]</grt></i></h5><br>
     <p>
         <grt>Only available in editor mode</grt><br>
         <req>Requires list owner permissions</req><br>Takes every permission that user had in the current list</p><br><br>
-    <h5><i style='background-color:lightgray; font:italic;'>k!todo buy <put>[type]</put></i></h5><br>
+    <h5><i style='background-color:#121212; font:italic;'>k!todo buy <put>[type]</put></i></h5><br>
     <p>
         <grt>Only available in editor mode</grt><br>
         <put>Available types: thumbnail, color, space</put><br>You are able to purchase extra space, a custom color or a custom thumbnail for your list with this command</p>
     <br><br>
-    <h5><i style='background-color:lightgray; font:italic;'>k!todo shop</i></h5>
+    <h5><i style='background-color:#121212; font:italic;'>k!todo shop</i></h5>
     <p><br>Displays a menu of how much what you can buy is</p><br><br>
-    <h5><i style='background-color:lightgray; font:italic;'>k!todo exit</i></h5><br>
+    <h5><i style='background-color:#121212; font:italic;'>k!todo exit</i></h5><br>
     <p>
         <grt>Only available in editor mode</grt><br>Exits the current list you are editing</p><br><br>
-    <h5><i style='background-color:lightgray; font:italic;'>k!todo status</i></h5>
+    <h5><i style='background-color:#121212; font:italic;'>k!todo status</i></h5>
     <p><br>
         <grt>Only available in editor mode</grt><br>Enables you to change the todo-list's status you previously specified in todo create</p><br><br>
-    <h5><i style='background-color:lightgray; font:italic;'>k!todo name</i></h5><br>
+    <h5><i style='background-color:#121212; font:italic;'>k!todo name</i></h5><br>
     <p>
         <grt>Only available in editor mode</grt><br>Enables you to change the todo-list's name you previously specified in todo create</p><br><br>
-    <h5><i style='background-color:lightgray; font:italic;'>k!todo autodelete</i></h5>
+    <h5><i style='background-color:#121212; font:italic;'>k!todo autodelete</i></h5>
     <p><br>
         <grt>Only available in editor mode</grt><br>Enables you to change the todo-list's setting if it should auto-delete a todo that has been marked as "done" you previously specified in todo create</p>
     <br><br>
-    <h5><i style='background-color:lightgray; font:italic;'>k!todo color</i></h5><br>
+    <h5><i style='background-color:#121212; font:italic;'>k!todo color</i></h5><br>
     <p>
         <grt>Only available in editor mode</grt><br>Enables you to change the todo-list's color if you have purchased it with todo buy color</p><br><br>
-    <h5><i style='background-color:lightgray; font:italic;'>k!todo thumbnail</i></h5>
+    <h5><i style='background-color:#121212; font:italic;'>k!todo thumbnail</i></h5>
     <p>
         <grt>Only available in editor mode</grt><br>Enables you to change the todo list's color if you have purchased it with todo buy thumbnail</p><br><br>
-    <h5><i style='background-color:lightgray; font:italic;'>k!todo custom_id</i></h5><br>
+    <h5><i style='background-color:#121212; font:italic;'>k!todo custom_id</i></h5><br>
     <p>
         <grt>Only available in editor mode</grt><br>Enables you to change the todo-list's color if you have set it in todo create (only possible if you are a premium supporter)</p><br><br>
-    <h5><i style='background-color:lightgray; font:italic;'>k!todo remove <grt>[todo-task-number]</grt></i></h5><br>
+    <h5><i style='background-color:#121212; font:italic;'>k!todo remove <grt>[todo-task-number]</grt></i></h5><br>
     <p>
         <grt>Only available in editor mode</grt><br>Removes the todo task with the specified number</p><br><br>
-    <h5><i style='background-color:lightgray; font:italic;'>k!todo add <grt>[todo]</grt></i></h5><br>
+    <h5><i style='background-color:#121212; font:italic;'>k!todo add <grt>[todo]</grt></i></h5><br>
     <p>
         <grt>Only available in editor mode</grt><br>Adds "todo" to your todos of your current list</p><br><br>
-    <h5><i style='background-color:lightgray; font:italic;'>k!todo mark <grt>[todo-task-number] [marked-as]</grt></i></h5><br>
+    <h5><i style='background-color:#121212; font:italic;'>k!todo mark <grt>[todo-task-number] [marked-as]</grt></i></h5><br>
     <p>
         <grt>Only available in editor mode</grt><br>Marks the todo task specified with the comment specified. If the comment is "done" and you specified that a task should be deleted when it’s done, this will delete the task. If the comment is "-rm" the comment
         to that todo task is entirely removed</p>
     <br><br>
-    <h5><i style='background-color:lightgray; font:italic;'>k!todo assign <grt>[todo-task-number] [mention/user-id] [optional-rm]</grt></i></h5><br>
+    <h5><i style='background-color:#121212; font:italic;'>k!todo assign <grt>[todo-task-number] [mention/user-id] [optional-rm]</grt></i></h5><br>
     <p>
         <grt>Only available in editor mode</grt><br>
         <req>Required permissions of user you assign the task to: editor or owner</req><br>Assigns a todo task to a team member who will be informed through dms. A todo task can have multiple people assigned to it. If you decide to remove a user from a task,
         use the command as normal and add "-rm" at the end</p>
     <br><br>
-    <h5><i style='background-color:lightgray; font:italic;'>k!todo delete</i></h5><br>
+    <h5><i style='background-color:#121212; font:italic;'>k!todo delete</i></h5><br>
     <p>
         <grt>Only available in editor mode</grt><br>
         <req>Requires owner permissions of the current list</req><br>Deletes the current list you are on</p><br><br>
-    <h5><i style='background-color:lightgray; font:italic;'>k!todo lists</i></h5><br>
+    <h5><i style='background-color:#121212; font:italic;'>k!todo lists</i></h5><br>
     <p>Gives you a list of what lists you own, can view and edit so you don't have to memorize the IDs</p>
     <script>
         let sh = screen.availHeight;
@@ -198,7 +199,7 @@
             }
         }
     </script><br>
-    <div id="dcl" style="position:absolute; right:0px; margin-right:50px;"><a href='/disclaimers' id='dcl'>Disclaimer</a></div>
+    <div id="dcl" style="position:absolute; right:0px; margin-right:50px;margin-bottom:10px;"><a href='/disclaimers' id='dcl'>Disclaimer</a></div>
 </body>
 <h1></h1>
 
