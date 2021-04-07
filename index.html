@@ -55,7 +55,7 @@
     </style>
 </head>
 
-<body>
+<body onresize='c()'>
     <nav class="navbar navbar-expand-md bg-dark navbar-dark" id='navbar'>
         <!-- Brand -->
         <a class="navbar-brand" href="#"><img src="https://i.ibb.co/pdL4Zmw/killua.webp" alt="logo" style="width:40px;"></a>
@@ -141,11 +141,27 @@
             }
         }
     </script><br><br>
+    <script>
+        function c() {
+            let dcl = document.getElementById('dcl');
+            if (window.innerHeight <= 800) {
+                dcl.style = "";
+            }
+        }
+        c();
+    </script>
+    <script>
+        function c() {
+            console.log(window.innerHeight);
+        }
+    </script>
     <a href='/stillindev'>Dashboard</a><br>
     <a href='/stillindev'>Rankings</a><br>
     <a href='/stillindev'>FAQs</a><br>
     <a href='/contributors'>Contributors</a><br>
-    <div id="dcl" style="position:absolute; right:0px; bottom:0px; margin-right:50px;"><a href='/disclaimers' id='dcl'>Disclaimer</a></div>
+    <div id='pdcl' style='position:relative;'>
+        <div id="dcl" style="position:absolute; right:50px; bottom:10px;margin-right:50px;"><a href='/disclaimers' id='dcl'>Disclaimer</a></div>
+    </div>
 </body>
 
 <h1></h1>
