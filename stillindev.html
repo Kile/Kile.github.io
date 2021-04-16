@@ -21,23 +21,16 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js" crossorigin='anonymous'></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" crossorigin='anonymous'></script>
     <style>
-        #img1n {
-            background-image: url("https://i.ibb.co/ykzD5p0/33344c.png");
-            /* Full height */
-            height: 100%;
-            background-attachment: fixed;
-            /* Center and scale the image nicely */
-            background-position: center;
+        body {
+            background-image: url('https://cdn.discordapp.com/avatars/606162661184372736/5b8a4dd3f723992f91b77e53b816a643.png?size=1024');
             background-repeat: no-repeat;
             background-size: cover;
-        }
-        
-        body {
-            background-color: #151515;
+            background-position: center center;
             font: Verdana;
             text-align: center;
             max-width: 100%;
-            color: whitesmoke;
+            font-family: Helvetica, sans-serif;
+            color: black;
             position: relative;
             min-height: 100%;
         }
@@ -55,10 +48,21 @@
         html {
             height: 100%;
         }
+        
+        #bg {
+            background-image: url('https://cdn.discordapp.com/avatars/606162661184372736/5b8a4dd3f723992f91b77e53b816a643.png?size=1024');
+            height: 100%;
+            width: 100%;
+            /* Center and scale the image nicely */
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
     </style>
 </head>
 
 <body>
+    <div id='bg'></div>
     <nav class="navbar navbar-expand-md bg-dark navbar-dark" id='navbar'>
         <!-- Brand -->
         <a class="navbar-brand" href="#"><img src="https://cdn.discordapp.com/avatars/756206646396452975/30c2da6b0a777658021cbac239fa5e66.png?size=1024" alt="Logo is supposed to be here but it isn't :(" style="width:40px;"></a>
@@ -85,49 +89,8 @@
                 </li>
             </ul>
         </div>
-    </nav>
-    <div id='img1n' style='display:table; width:100%;'>
-        <div style='display:table-cell; width:100%;'><br><br>
-            <script>
-                if (screen.availHeight >= 750) {
-                    document.write('<br>');
-                }
-                if (screen.availHeight >= 1500) {
-                    document.write('<br><br>')
-                }
-            </script>
-            <h1 id="txt1" style='font-family:"Times New Roman", Times, Serif;text-align: center; color:white;'>Still In Development</h1><br><br>
-            <script>
-                if (screen.availHeight >= 750) {
-                    document.write('<br>');
-                }
-                if (screen.availHeight >= 1500) {
-                    document.write('<br><br>')
-                }
-            </script>
-        </div>
-    </div><br>
-    <script>
-        let sh = screen.availHeight;
-        for (var i = 1; i <= 2; i++) {
-            if (sh / i >= 750) {
-                document.write('<br>');
-            }
-        }
-    </script>
-    <h2>This page is still in development.</h2>
-    <script>
-        let sh = screen.availHeight;
-        for (var i = 1; i <= 2; i++) {
-            if (sh / i >= 1000) {
-                document.write('<br>');
-            }
-        }
-    </script><br>
-    <span style='position:relative;'></span>
-    <div id='pdcl'>
-        <div id="dcl" style="position:absolute; right:50px; bottom:10px;"><a href='/disclaimers' id='dcl'>Disclaimer</a></div>
-    </div>
+    </nav><br><br>
+    <h1>This page is still in development.</h1>
 </body>
 <h1></h1>
 
