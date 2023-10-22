@@ -30,5 +30,5 @@
 
 ## Information
 
-https://killua.dev/ is made and updated by [WhoAmI1000](https://github.com/WhoAmI1000) (Discord: `WhoAmI#0001`) and gives information
-about the discord bot Killua
+https://killua.dev/ was originally made by [WhoAmI1000](https://github.com/WhoAmI1000) (Discord: `WhoAmI#0001`) but has had a major rewrite in 2023. It aims to give information
+about the discord bot Killua.

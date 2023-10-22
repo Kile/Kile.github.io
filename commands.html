@@ -17,7 +17,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <meta name="theme-color" content="#1400FF">
+    <meta name="theme-color" content="#33344C">
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         crossorigin='anonymous'>
@@ -25,125 +25,17 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"
         crossorigin='anonymous'></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" crossorigin='anonymous'></script>
-    <style>
-        #img1n {
-            background-image: url("https://i.ibb.co/ykzD5p0/33344c.png");
-            /* Full height */
-            height: 100%;
-            background-attachment: fixed;
-            /* Center and scale the image nicely */
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-
-        body {
-            background-color: #151515;
-            font: Verdana;
-            text-align: center;
-            max-width: 100%;
-            color: whitesmoke;
-            position: relative;
-        }
-
-        #navbar {
-            height: 14.3%;
-        }
-
-        table {
-            margin: 0px auto;
-            border-radius: 5px;
-            font-family: arial, sans-serif;
-            border-collapse: collapse;
-            width: 90%;
-            background-color: #33344c;
-            color: white;
-        }
-
-        td,
-        th {
-            border: 1px solid #77788f;
-            /*66677f*/
-            text-align: left;
-            padding: 8px;
-        }
-
-        tr:hover {
-            background-color: #22233b;
-        }
-
-        h1 {
-            color: green;
-        }
-
-        #tocm:hover {
-            background-color: #33344c;
-        }
-
-        .tocs:hover {
-            cursor: pointer;
-        }
-
-        .button {
-            background-color: gray;
-            border: none;
-            color: white;
-            padding: 15px 32px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 16px;
-            border-radius: 5px;
-            text-decoration: none;
-        }
-
-        .button:hover {
-            text-decoration: none;
-            background-color: rgb(100, 100, 100);
-            color: white;
-        }
-
-        .tt {
-            margin-bottom: -5px;
-        }
-
-        .ttr {
-            margin-bottom: 0px;
-        }
-
-        .ct {
-            margin: 0px auto;
-        }
-
-        #ttb {
-            display: none;
-            position: fixed;
-            bottom: 20px;
-            left: 30px;
-            z-index: 99;
-            font-size: 18px;
-            border: none;
-            outline: none;
-            background-color: #33344c;
-            color: white;
-            cursor: pointer;
-            padding: 15px;
-            border-radius: 50%;
-        }
-
-        th {
-            text-align: center;
-        }
-    </style>
+    <!-- Stylesheet and code for the rest of the page-->
+    <!-- <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css"> -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <span id='top'></span>
     <nav class="navbar navbar-expand-md bg-dark navbar-dark" id='navbar'>
         <!-- Brand -->
-        <a class="navbar-brand" href="#"><img
+        <a class="navbar-brand" href="./index.html"><img
                 src="https://cdn.discordapp.com/avatars/756206646396452975/30c2da6b0a777658021cbac239fa5e66.png?size=1024"
-                alt="Logo is supposed to be here but it isn't :(" style="width:40px;"></a>
+                alt="logo" style="width:40px;"></a>
 
         <!-- Toggler/collapsibe Button -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
@@ -154,19 +46,29 @@
         <div class="collapse navbar-collapse" id="collapsibleNavbar">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link" href="/index">Home</a>
-                </li>
-                <li class="nav-item">
                     <a class="nav-link"
                         href="https://discord.com/oauth2/authorize?client_id=756206646396452975&scope=bot&permissions=1342531648">Add
                         To Server</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="https://discord.gg/FdErZCd">Discord</a>
+                    <a class="nav-link" href="https://discord.gg/FdErZCd">Discord Server</a>
+                </li>
+
+
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.patreon.com/KileAlkuri">Patreon</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./commands.html">Commands</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./contributors.html">The Team</a>
                 </li>
             </ul>
         </div>
     </nav>
+
+
     <div id='img1n' style='display:table; width:100%;'>
         <div style='display:table-cell; width:100%;'><br><br>
             <script>
@@ -177,8 +79,7 @@
                     document.write('<br><br>')
                 }
             </script>
-            <h1 id="txt1" style='font-family:"Times New Roman", Times, Serif;text-align: center; color:white;'>Killua:
-                Commands</h1><br><br>
+            <h1 id="heading">Commands</h1><br><br>
             <script>
                 if (screen.availHeight >= 750) {
                     document.write('<br>');
@@ -197,811 +98,82 @@
             }
         }
     </script>
-    <h2>Commands</h2>
-    <br><br>
-    <h3>Command Groups</h3><br>
-    <p>Killua has action, card, economy, moderation, todo, fun, miscellaneous, game, and tag commands.</p><br><br>
-    <div class='ct'>
-        <table id='toc'>
-            <tr id='tocm'>
-                <th style='text-align: center;'>Table of Contents</th>
-            </tr><noscript>
-                <tr>
-                    <th style='text-align: center;'>You Don't Have JS Enabled! The links below won't work as they
-                        operate on JS.</th>
-                </tr>
-            </noscript>
-            <!--THINS TO ADD: ACTIONS, GAMES
-            DOUBLE CHECK OTHER CATEGORY
-        -->
-            <tr class='tocs' onclick="location.href='#actions'">
-                <td style='text-align: center;'>Actions</td>
-            </tr>
-            <tr class='tocs' onclick="location.href='#gic'">
-                <td style='text-align: center;'>Cards</td>
-            </tr>
-            <tr class='tocs' onclick="location.href='#economy'">
-                <td style='text-align: center;'>Economy</td>
-            </tr>
-            <tr class='tocs' onclick="location.href='#moderation'">
-                <td style='text-align: center;'>Moderation</td>
-            </tr>
-            <tr class='tocs' onclick="location.href='#todo'">
-                <td style='text-align: center;'>Todo</td>
-            </tr>
-            <tr class='tocs' onclick="location.href='#fun'">
-                <td style='text-align: center;'>Fun</td>
-            </tr>
-            <tr class='tocs' onclick="location.href='#other'">
-                <td style='text-align: center;'>Other</td>
-            </tr>
-            <tr class='tocs' onclick="location.href='#games'">
-                <td style='text-align: center;'>Games</td>
-            </tr>
-            <tr class='tocs' onclick="location.href='#tagsc'">
-                <td style='text-align: center;'>Tags</td>
-            </tr>
+     <div id="data-container">
+        <!-- Data will be added here -->
+    </div>
 
-        </table>
-    </div><br><br id='actions'>
-    <table class='tt'>
-        <tr class='ttr'>
-            <th style='text-align:center;'>Actions</th>
-        </tr>
-    </table>
-    <div class='ct'>
-        <table>
-            <tr>
-                <th>Command</th>
-                <th>Description</th>
-                <th>Format</th>
-            </tr>
-            <tr>
-                <td>hug</td>
-                <td>Hug a user with tdis command.</td>
-                <td>k!hug [user]</td>
-            </tr>
-            <tr>
-                <td>pat</td>
-                <td>Pat a user with this command.</td>
-                <td>k!pat [user]</td>
-            </tr>
-            <tr>
-                <td>poke</td>
-                <td>Poke a user with this command.</td>
-                <td>k!poke [user]</td>
-            </tr>
-            <tr>
-                <td>tickle</td>
-                <td>Tickle a user with this comm- ha- hahaha- stop- haha</td>
-                <td>k!tickle [user]</td>
-            </tr>
-            <tr>
-                <td>slap</td>
-                <td>Slap a user with this command.</td>
-                <td>k!slap [user]</td>
-            </tr>
-        </table>
-    </div><br><br id='gic'>
-    <table class='tt'>
-        <tr class='ttr'>
-            <th style='text-align: center;'>Cards</th>
-        </tr>
-    </table>
-    <div class='ct'>
-        <table>
-            <tr>
-                <th>Command</th>
-                <th>Description</th>
-                <th>Format</th>
-            </tr>
-            <tr>
-                <td>book</td>
-                <td>Allows you to take a look at your cards.</td>
-                <td>k!book [optional page number]</td>
-            </tr>
-            <tr>
-                <td>shop cards</td>
-                <td>Shows the current cards for sale.</td>
-                <td>k!shop cards</td>
-            </tr>
-            <tr>
-                <td>buy card</td>
-                <td>Buy a card from the shop with this command.</td>
-                <td>k!buy card [card id]</td>
-            </tr>
-            <tr>
-                <td>sell</td>
-                <td>Sell any amount of cards you own.</td>
-                <td>k!sell [card id] [optional amount]</td>
-            </tr>
-            <tr>
-                <td>swap</td>
-                <td>Allows you to swap cards from your free slots with the restrcited slots and the other way around.
-                </td>
-                <td>k!swap [card id]</td>
-            </tr>
-            <tr>
-                <td>hunt</td>
-                <td>Go on a hunt! The longer you are on the hunt, the better the rewards!</td>
-                <td>k!hunt [end optional]</td>
-            </tr>
-            <tr>
-                <td>meet</td>
-                <td>Meet a user who has recently send a message in this channel to enable certain spell card effects.
-                </td>
-                <td>k!meet [user]</td>
-            </tr>
-            <tr>
-                <td>give card</td>
-                <td>If you're feeling generous give another user cards or jenny. Available types are jenny and card.
-                </td>
-                <td>k!give card [user] [card id]</td>
-            </tr>
-            <tr>
-                <td>discard</td>
-                <td>Discard a card you want to get rid of with this command.</td>
-                <td>k!discard [card id]</td>
-            </tr>
-            <tr>
-                <td>use</td>
-                <td>Use spell cards you own with this command! Focus on offense or defense, team up with your friends or
-                    steal their cards in their sleep!</td>
-                <td>k!use [card id or booklet] [required arguments]</td>
-            </tr>
-            <tr>
-                <td>cardinfo</td>
-                <td>Check card info about any card you own.</td>
-                <td>k!cardinfo [Card ID]]</td>
-            </tr>
-            <tr>
-                <td>check</td>
-                <td>This command lets you see how many copies of the specified card are fakes.</td>
-                <td>k!check [Card ID]</td>
-            </tr>
-        </table>
-    </div><br><br id='economy'>
-    <table class='tt'>
-        <tr class='ttr'>
-            <th style='text-align: center;'>Economy</th>
-        </tr>
-    </table>
-    <div class='ct'>
-        <table>
-            <tr>
-                <th>Command</th>
-                <th>Description</th>
-                <th>Format</th>
-            </tr>
-            <tr>
-                <td>inventory</td>
-                <td>Displays your owned lootboxes.</td>
-                <td>k!inventory</td>
-            </tr>
-            <tr>
-                <td>boxinfo</td>
-                <td>Gives you information about any box.</td>
-                <td>k!boxinfo [Box ID]</td>
-            </tr>
-            <tr>
-                <td>daily</td>
-                <td>Gives you your daily Jenny.</td>
-                <td>k!daily</td>
-            </tr>
-            <tr>
-                <td>weekly</td>
-                <td>Claim your weekly lootbox with this command. Only premium users can use this command.</td>
-                <td>k!weekly</td>
-            </tr>
-            <tr>
-                <td>shop lootboxes</td>
-                <td>Get the current lootbox shop with this command.</td>
-                <td>k!shop lootboxes</td>
-            </tr>
-            <tr>
-                <td>guild</td>
-                <td>Displays information about the current guild.</td>
-                <td>k!guild</td>
-            </tr>
-            <tr>
-                <td>leaderboard</td>
-                <td>Get a leaderboard of members with the most jenny.</td>
-                <td>k!leaderboard</td>
-            </tr>
-            <tr>
-                <td>buy lootbox</td>
-                <td>Buy a lootbox with this command!</td>
-                <td>k!buy lootbox</td>
-            </tr>
-            <tr>
-                <td>profile</td>
-                <td>Get information about a certain discord user with their ID or mention.</td>
-                <td>k!profile [Optional User]</td>
-            </tr>
-            <tr>
-                <td>open</td>
-                <td>This command will allow you to open a lootbox with an interactive UI.</td>
-                <td>k!open</td>
-            </tr>
-            <tr>
-                <td>give lootbox</td>
-                <td>If you're feeling generous, you can give another user a lootbox.</td>
-                <td>k!give lootbox [user] [Box ID]</td>
-            </tr>
-            <tr>
-                <td>give jenny</td>
-                <td>Gives another user the specified amount of Jenny.</td>
-                <td>k!give jenny [user] [amount]</td>
-            </tr>
-            <tr>
-                <td>balance</td>
-                <td>Shows the balance of the specified user, or yourself.</td>
-                <td>k!balance [optional user]</td>
-            </tr>
-        </table>
-    </div><br>
-    <br id='moderation'>
-    <table class='tt'>
-        <tr class='ttr'>
-            <th style='text-align: center;'>Moderation</th>
-        </tr>
-    </table>
-    <div class='ct'>
-        <table>
-            <tr>
-                <th>Command</th>
-                <th>Description</th>
-                <th>Format</th>
-            </tr>
-
-            <tr>
-                <td>prefix</td>
-                <td>Sets a new prefix for Killua for the server, can only be used by server admins. If you forgot your
-                    prefix, you can always mention Killua as the prefix.</td>
-                <td>k!prefix [string]</td>
-            </tr>
-            <tr>
-                <td>ban</td>
-                <td>Bans a member and deletes their messages from over the last 24 hours.</td>
-                <td>k!ban [user] [optional reason]</td>
-            </tr>
-            <tr>
-                <td>kick</td>
-                <td>Kicks the member specified.</td>
-                <td>k!kick [user] [optional reason]</td>
-            </tr>
-            <tr>
-                <td>unban</td>
-                <td>Unbans the the user. Please specify the ID or the name and tag.</td>
-                <td>k!unban [userId or Nameandtag]</td>
-            </tr>
-            <tr>
-                <td>mute</td>
-                <td>Mutes a user for the specified duration or unlimited. You need to have a role named muted (not case
-                    sensetive) that has already been set up. Please deny that role any send message permissions.</td>
-                <td>k!mute [user] [time or u] [optional reason]</td>
-            </tr>
-            <tr>
-                <td>unmute</td>
-                <td>Unmutes the user.</td>
-                <td>k!unmute [user] [optional reason]</td>
-            </tr>
-        </table>
-    </div><br><br id='todo'>
-    <table class='tt'>
-        <tr class='ttr'>
-            <th style='text-align: center;'>Todo</th>
-        </tr>
-    </table>
-    <div class='ct'>
-        <table>
-            <tr>
-                <th>Command</th>
-                <th>Description</th>
-                <th>Format</th>
-            </tr>
-            <tr>
-                <td>create</td>
-                <td>Creates a todo-list with an interactive and easy setup.</td>
-                <td>k!todo create</td>
-            </tr>
-            <tr>
-                <td>edit</td>
-                <td>Allows you to edit a list and enables the use of lots of commands. Requires being owner or having
-                    edit permissions.</td>
-                <td>k!todo edit [list id]</td>
-            </tr>
-            <tr>
-                <td>view</td>
-                <td>When in edit mode, will show the entries of the current list you are editing. When not in edit mode,
-                    it shows the todo list with the specified ID (must have sufficient permissions).</td>
-                <td>k!todo view [list id]</td>
-            </tr>
-            <tr>
-                <td>info</td>
-                <td>Gives insights about the todo task specified or the current list if no argument is provided, when in
-                    edit mode. When not in edit mode, it gives information on the list or a task, if specified (requires
-                    sufficient permissions).</td>
-                <td>k!todo info [todo task number (optional) or todo list ID] [optional todo task number]</td>
-            </tr>
-            <tr>
-                <td>invite</td>
-                <td>Sends the specified user a DM if possible and if they accept the invitation, they get the specified
-                    permission for that todo list. Only available in editor mode. Available types: editor, viewer.</td>
-                <td>k!todo invite [mention or user id] [type]</td>
-            </tr>
-            <tr>
-                <td>kick</td>
-                <td>Only available in editor mode. Requires list owner permissions. Takes every permission the specified
-                    user had in the current list.</td>
-                <td>k!todo kick [mention or user id]</td>
-            </tr>
-            <tr>
-                <td>buy todo</td>
-                <td>You are able to purchase extra space, a custom color or a custom thumbnail for your list with this
-                    command. Only available in editor mode. Available items: thumbnail, color, space.</td>
-                <td>k!buy todo [item]</td>
-            </tr>
-            <tr>
-                <td>shop todo</td>
-                <td>Displays a menu of how much what you can buy is.</td>
-                <td>k!shop todo</td>
-            </tr>
-            <tr>
-                <td>exit</td>
-                <td>Exits the current list you are editing. Only available in editor mode.</td>
-                <td>k!todo exit</td>
-            </tr>
-            <tr>
-                <td>status</td>
-                <td>Only available in editor mode. Enables you to change the todo-list's status you previously specified
-                    in todo create.</td>
-                <td>k!todo status</td>
-            </tr>
-            <tr>
-                <td>name</td>
-                <td>Only available in editor mode. Enables you to change the todo-lists's name you previously specified
-                    in todo create.</td>
-                <td>k!todo name</td>
-            </tr>
-            <tr>
-                <td>autodelete</td>
-                <td>Only available in editor mode. Enables you to change the todo-list's setting if it should
-                    auto-delete a todo that has been marked as "done" you previously specified in todo-create.</td>
-                <td>k!todo autodelete</td>
-            </tr>
-            <tr>
-                <td>color</td>
-                <td>Only available in editor mode. Enables you to change the todo-list's color if you have purchased it
-                    with todo buy color.</td>
-                <td>k!todo color</td>
-            </tr>
-            <tr>
-                <td>thumbnail</td>
-                <td>Only available in editor mode. Enables you to change the todo list's color if you have purchased it
-                    with todo buy thumbnail.</td>
-                <td>k!todo thumbnail</td>
-            </tr>
-            <tr>
-                <td>custom_id</td>
-                <td>Only available in editor mode. Enables you to change the todo-list's ID if you have it set in todo
-                    create (only possible if you are premium supporter).</td>
-                <td>k!todo custom_id</td>
-            </tr>
-            <tr>
-                <td>remove</td>
-                <td>Only available in editor mode. Removes the todo task with the specified number.</td>
-                <td>k!todo remove [todo-task-number]</td>
-            </tr>
-            <tr>
-                <td>add</td>
-                <td>Only available in editor mode. Adds "todo" to your todos of your current list.</td>
-                <td>k!todo add [todo]</td>
-            </tr>
-            <tr>
-                <td>mark</td>
-                <td>Only avialable in editor mode. Marks the todo task specified with the comment specified.</td>
-                <td>k!todo mark [todo-task-ID] [text]</td>
-            </tr>
-            <tr>
-                <td>assign</td>
-                <td>Only available in editor mode. Required permissions of user you assign the tast to: editor or owner.
-                    Assigns a todo task to a team member who will be informed through dms. A todo task can have multiple
-                    people assigned to it. If you decide
-                    to remove a user from a task, use the command as normal and add "-rm" at the end.
-                <td>k!todo assign [todo task number] [mention/user id] [optional-rm]</td>
-            </tr>
-            <tr>
-                <td>delete</td>
-                <td>Only available in editor mode. Requires owner permissions of the current list. Deletes the current
-                    list you are on.</td>
-                <td>k!todo delete</td>
-            </tr>
-            <tr>
-                <td>lists</td>
-                <td>Gives you a list of what you own, view, and edit so you don't have to memorize the IDs.</td>
-                <td>k!todo lists</td>
-            </tr>
-            <tr>
-                <td>clear</td>
-                <td>Clears all todos from a todo list.</td>
-                <td>k!todo clear</td>
-            <tr>
-                <td>description</td>
-                <td>Change the description of your todo list with this command. Only available in editor mode.</td>
-                <td>k!todo description [New Description]</td>
-            </tr>
-            </tr>
-        </table>
-    </div><br><br id='fun'>
-    <table class='tt'>
-        <tr class='ttr'>
-            <th style='text-align: center;'>Fun</th>
-        </tr>
-    </table>
-    <div class='ct'>
-        <table>
-            <tr>
-                <th>Command</th>
-                <th>Description</th>
-                <th>Format</th>
-            </tr>
-            <tr>
-                <td>topic</td>
-                <td>Get a topic to talk about with this command.</td>
-                <td>k!topic</td>
-            </tr>
-            <tr>
-                <td>calc</td>
-                <td>Calculates the specified mathematical expression.</td>
-                <td>k!calc</td>
-            </tr>
-            <tr>
-                <td>translate</td>
-                <td>Translates the text to the given target language.</td>
-                <td>k!translate [source language or auto] [target language] [text]</td>
-            </tr>
-            <tr>
-                <td>8ball</td>
-                <td>Killua will answer the question.</td>
-                <td>k!8ball [question]</td>
-            </tr>
-            <tr>
-                <td>avatar</td>
-                <td>Retrieves the avatar of the user.</td>
-                <td>k!avatar [user]</td>
-            </tr>
-            <tr>
-                <td>novel</td>
-                <td>Gets information about the book.</td>
-                <td>k!novel [book title]</td>
-            </tr>
-            <tr>
-                <td>emojaic</td>
-                <td>Changes the provided image to emojis (try this!)</td>
-                <td>k!emojaic [user, id, or link]</td>
-            </tr>
-            <tr>
-                <td>flag</td>
-                <td>Valid flags: asexual, aromantic, bisexual, pansexual, gay, lesbian, trans, nonbinary, genderfluid,
-                    genderqueer, polysexual, austria, belgium, botswana, bulgaria, ivory, estonia, france, gabon,
-                    gambia, germany, guinea, hungary, indonesia,
-                    ireland, italy, luxembourg, monaco, nigeria, poland, russia, romania, sierraleone, thailand,
-                    ukraine, yemen.</td>
-                <td>k!flag [flag] [user, id, or URL]</td>
-            </tr>
-            <tr>
-                <td>glitch</td>
-                <td>Tranform a users pfp into a glitchy gif!</td>
-                <td>k!glitch [user, id, or URL]</td>
-            </tr>
-            <tr>
-                <td>lego</td>
-                <td>Legofies an image.</td>
-                <td>k!lego [user, id, or URL]</td>
-            </tr>
-            <tr>
-                <td>snapchat</td>
-                <td>Valid filters: dog, dog2, dog3, pig, flowers, random</td>
-                <td>k!snapchat [filter] [user, id, or URL]</td>
-            </tr>
-            <tr>
-                <td>eyes</td>
-                <td>Valid eyes: big, black, bloodshot, blue, default, googly, green, horror, illuminati, money, pink,
-                    red, small, spinner, spongebob, white, yellow, random.</td>
-                <td>k!eyes [eye type] [user or image URL]</td>
-            </tr>
-            <tr>
-                <td>thonkify</td>
-                <td>Turn text into thonks!</td>
-                <td>k!thonkify [text]</td>
-            </tr>
-            <tr>
-                <td>uwufy</td>
-                <td>Uwufy any sentence you want with dis command, have fun!</td>
-                <td>k!uwufy [text]</td>
-            </tr>
-            <tr>
-                <td>screenshot</td>
-                <td>Screenshot the specified website!</td>
-                <td>k!screenshot [url]</td>
-            </tr>
-            <tr>
-                <td>sonic</td>
-                <td>Let sonic say anything you want!</td>
-                <td>k!sonic [text]</td>
-            </tr>
-            <tr>
-                <td>jpeg</td>
-                <td>Did you ever want to decrease image quality? Then this is the command for you!</td>
-                <td>k!jpeg [user, id, or URL]</td>
-            </tr>
-            <tr>
-                <td>google</td>
-                <td>Get the best results for a query the web has to offer.</td>
-                <td>k!google [query]</td>
-            </tr>
-            <tr>
-                <td>img</td>
-                <td>Search any image you want!</td>
-                <td>k!img [query]</td>
-            </tr>
-            <tr>
-                <td>snapchat</td>
-                <td>Valid filters: dog, dog2, dog3, pig, flowers, random</td>
-                <td>k!snapchat [filter] [user/url]</td>
-            </tr>
-            <tr>
-                <td>ajit</td>
-                <td>Overlays an image of Ajit Pai snacking on some popcorn.</td>
-                <td>k!ajit [user/url]</td>
-            </tr>
-            <tr>
-                <td>nokia</td>
-                <td>Displays the image in a nokia phone.</td>
-                <td>k!nokia [user/url]</td>
-            </tr>
-            <tr>
-                <td>flash</td>
-                <td>Creates a flashing GIF.</td>
-                <td>k!flash [user/url]</td>
-            </tr>
-            <tr>
-                <td>invite</td>
-                <td>Allows you to invite Killua to any guild you have at least manage server permissions in. <b>Do
-                        it.</b></td>
-                <td>k!invite</td>
-            </tr>
-            <tr>
-                <td>spin</td>
-                <td>Spins an image 'round and 'round and 'round and 'round...</td>
-                <td>k!spin [user/url]</td>
-            </tr>
-            <tr>
-                <td>info</td>
-                <td>Gives you some information and statistics about Killua.</td>
-                <td>k!info</td>
-            </tr>
-            <tr>
-                <td>permissions</td>
-                <td>Displays the permissions Killua has and doesn't have. This command is useful for checking if Killua
-                    has the permissions he needs.</td>
-                <td>k!permissions</td>
-            </tr>
-            <tr>
-                <td>vote</td>
-                <td>Gives you the links you will need if you want to support Killua by voting. You get jenny as a
-                    reward...</td>
-                <td>k!vote</td>
-            </tr>
-            <tr>
-                <td>usage</td>
-                <td>Shows the commands used the most. Added for fun.</td>
-                <td>k!usage</td>
-            </tr>
-            <tr>
-                <td>hi</td>
-                <td>This is just here because it was Killua's very first command. I can't take that from him!</td>
-                <td>k!hi</td>
-            </tr>
-            <tr>
-                <td>patreon</td>
-                <td>Get information about my Patreon and feel free to donate for some perks!</td>
-                <td>k!patreon</td>
-            </tr>
-            <tr>
-                <td>wtf</td>
-                <td>Puts the wtf meme below the image provided.</td>
-                <td>k!wtf [user, id, or url]</td>
-            </tr>
-        </table>
-    </div><br><br id='other'>
-    <table class='tt'>
-        <tr class='ttr'>
-            <th style='text-align: center;'>Other</th>
-        </tr>
-    </table>
-    <div class='ct'>
-        <table>
-            <tr>
-                <th>Command</th>
-                <th>Description</th>
-                <th>Format</th>
-            </tr>
-            <tr>
-                <td>premium</td>
-                <td>Add or remove the premium status of a guild with this command.</td>
-                <td>k!premium [add/remove]</td>
-            </tr>
-            <tr>
-                <td>feedback</td>
-                <td>Submit feedback to Killua with this command! For more information, use k!fb.</td>
-                <td>k!feedback [type] [text]</td>
-            </tr>
-            <tr>
-                <td>update</td>
-                <td>Allows you to view current and past updates.</td>
-                <td>k!update [optional version]</td>
-            </tr>
-        </table>
-    </div><br>
-    <br id='games'>
-    <table class='tt'>
-        <tr class='ttr'>
-            <th>Games</th>
-        </tr>
-    </table>
-    <div class='ct'>
-        <table>
-            <tr>
-                <th>Command</th>
-                <th>Description</th>
-                <th>Format</th>
-            </tr>
-            <tr>
-                <td>count</td>
-                <td>See how many numbers you can remember with this counting game!</td>
-                <td>k!count [easy/hard]</td>
-            </tr>
-            <tr>
-                <td>trivia</td>
-                <td>Play trivia and earn some jenny if you're right!</td>
-                <td>k!trivia</td>
-            </tr>
-            <tr>
-                <td>rps</td>
-                <td>Play Rock Paper Scissors with your friends! You can play with some Jenny on the line or just for
-                    fun.</td>
-                <td>k!rps [user] [optional Jenny bet]</td>
-            </tr>
-        </table>
-    </div><br>
-    <br id='tagsc'>
-    <table class='tt'>
-        <tr class='ttr'>
-            <th style='text-align: center;'>Tags</th>
-        </tr>
-    </table>
-    <div class='ct'>
-        <table>
-            <tr>
-                <th>Command</th>
-                <th>Description</th>
-                <th>Format</th>
-            </tr>
-            <tr>
-                <td>get</td>
-                <td>Retrieves the content of any tag.</td>
-                <td>k!tag get [tag name]</td>
-            </tr>
-            <tr>
-                <td>create</td>
-                <td>Create a tag with this command! After first using the command it will ask you for the content of the
-                    tag.</td>
-                <td>k!tag create [tag name]</td>
-            </tr>
-            <tr>
-                <td>edit</td>
-                <td>Chose wrong tag description? Edit a tag's description with this command (only if you own it).</td>
-                <td>k!tag edit [tag name]</td>
-            </tr>
-            <tr>
-                <td>list</td>
-                <td>Get a list of tags on the current server sorted by uses.</td>
-                <td>k!tag list</td>
-            </tr>
-            <tr>
-                <td>delete</td>
-                <td>Delete a tag you own with this command or any tag if you have manage guild permissions.</td>
-                <td>k!tag delete [tag name]</td>
-            </tr>
-            <tr>
-                <td>user</td>
-                <td>Get the tags a user own sorted by uses with this command.</td>
-                <td>k!tag user [user]</td>
-            </tr>
-            <tr>
-                <td>info</td>
-                <td>Get information about any tag with this command.</td>
-                <td>k!tag info [tag name]</td>
-            </tr>
-        </table>
-
-    </div><br>
-
-    <button onclick="topFunction()" id="ttb" title="Go to top">Top</button>
     <script>
-        let ttb2 = document.getElementById('ttb');
-        setInterval(function () {
-            var c1 = Math.floor((Math.random() * 255) + 1);
-            var c2 = Math.floor((Math.random() * 255) + 1);
-            var c3 = Math.floor((Math.random() * 255) + 1);
-            ttb2.style.backgroundColor = `rgb(${c1}, ${c2}, ${c3})`;
-        }, 1000); // Wait 1000ms before running again
-    </script>
-    <!--<h3>Moderation Commands</h3><br>
-    <p><span style='background-color:lightgray; font:italic;'><i>k!prefix [string]</i></span> - Sets a new prefix for Killua for the server, can only be used by server admins.<br><span style='background-color:lightgray; font:italic;'><i>k!ban [user] [optional reason]</i></span>        - Bans a member and deletes their messages from over the last 24 hours.<br><i style='background-color:lightgray; font:italic;'>k!unban [user or name and tag]</i> - Unbans the specified user.
-        <br><i style='background-color:lightgray; font:italic;'>k!mute [user] [optional time in minutes] [optional reason]</i> - Mutes a user. If a time is not specified, the user will be muted for an unlimited amount of time.<br><i style='background-color:lightgray; font:italic;'>
-    k!unmute [user] [optional reason]</i> - Unmutes the specified user.</p><br><br>
-    <h3>Fun Commands</h3><br>
-    <p><i style='background-color:lightgray; font:italic;'>k!quote [user] [message]</i> - Send a screenshot of a user saying what you defined. Use -c at the start of text for compact mode or -l for light mode or both.<br><i style='background-color:lightgray; font:italic;'>k!cmm [text]</i>        - Sends the <i>Change My Mind</i> meme with the text you defined.<br>
-        <i style='background-color:lightgray; font:italic;'>k!hug [user]</i> - Hugs the defined user.<br><i style='background-color:lightgray; font:italic;'>k!topic</i> - Get a topic with this command!
-        <br><i style='background-color:lightgray; font:italic;'>k!calc [math expression]</i> - Calculates the given expression.<br><i style='background-color:lightgray; font:italic;'>k!translate [source language or auto] [target language] [text]</i> -
-        Translates the given text to the target language.
-        <br><i style='background-color:lightgray; font:italic;'>k!8ball [question]</i> - Will answer the provided question.<br><i style='background-color:lightgray; font:italic;'>k!avatar [user]</i> - Sends the avatar picture of the specified user.
-        <br><i style='background-color:lightgray; font:italic;'>k!book [book name]</i> - Get info about the provided book.<br><i style='background-color:lightgray; font:italic;'>k!emojaic [user, id, or link to image]</i> - Turns the provided image into
-        emojis!
-        <br><i style='background-color:lightgray; font:italic;'>k!image [title]</i> - Gives you the best DuckDuckGo image for your title.<br><i style='background-color:lightgray; font:italic;'>k!f [type] [user, id, or link to image]</i> - Applies the
-        specified filter to the image. To get the list of filters, just type <i style='background-color:lightgray; font:italic;'>k!f</i>.
-    </p><br><br>
-    <h3>Economy Commands</h3><br>
-    <p>
-        <i style='background-color:lightgray; font:italic;'>k!daily</i> - Claim your daily points!<br><i style='background-color:lightgray; font:italic;'>k!rps [user] [optional bet]</i> - Play Rock, paper, scissors with another user! You can bet points
-        on the game.<br>
-        <i style='background-color:lightgray; font:italic;'>k!profile [user id or mention]</i> - View the profile of the defined user.<br><i style='background-color:lightgray; font:italic;'>k!give [user] [amount]</i> - Gives the defined user the specified
-        amount of your coins.<br>
-        <i style='background-color:lightgray; font:italic;'>k!server</i> - Gives you info about the current server.
-    </p>
-    <br><br>
-    <h3>Todo List Commands</h3><br>
-    <p>
-        <a href='/todo-docs'>View the todo list commands here.</a>
-    </p>
-    <h3>Miscellaneous Commands</h3><br>
-    <p>
-        <i style='background-color:lightgray; font:italic;'>k!info</i> - Gives you information about Killua!<br><i style='background-color:lightgray; font:italic;'>k!patreon</i> - Gives you a link to the Killua Patreon.<br><i style='background-color:lightgray; font:italic;'>k!invite</i>        - Gives you the invite link.
-        <br><i style='background-color:lightgray; font:italic;'>k!codeinfo [command]</i> - Gives you insights on a command.<br><i style='background-color:lightgray; font:italic;'>k!permissions</i> - Will list the permissions Killua has on the server.<br>
-        <i style='background-color:lightgray; font:italic;'>k!bug [command name or other] [description]</i> - You can report bugs with this command. Abusing it will get you blacklisted.
-        <br><i style='background-color:lightgray; font:italic;'>k!fp [type of feedback] [feedback]</i> - Send feedback directly to Kile! Abuse or spam of this command will result in blacklisting.
-    </p>-->
-    <script>
-        for (var i = 1; i <= 2; i++) {
-            if (sh / i >= 1000) {
-                document.write('<br>');
+        function createCollapsibleGroup(groupName, groupDescription, commands) {
+            const groupDiv = document.createElement('div');
+            groupDiv.classList.add('cmd-group');
+            groupDiv.innerHTML = `
+                <h2 class="cmd-group-title">${groupName}</h2>
+                <p class="cmd-group-description">${groupDescription}</p>
+            `;
+
+            // Add event listener for the cmd-group-title element of that group
+            groupDiv.querySelector('.cmd-group-title').addEventListener('click', function() {
+                groupDiv.querySelector('.cmd-group-description').style.display = groupDiv.querySelector('.cmd-group-description').style.display === 'none' ? 'flex' : 'none';
+                
+                groupDiv.querySelectorAll('.cmd-title').forEach(title => {
+                    title.style.display = title.style.display === 'none' ? 'flex' : 'none';
+                });
+                // Do the same thing with cmd descriptions
+                groupDiv.querySelectorAll('.cmd-description').forEach(description => {
+                    if (description.style.display === 'flex') {
+                        description.style.display = 'none';
+                    }
+                });
+
+                groupDiv.querySelectorAll('.cmd ').forEach(cmd => {
+                    cmd.style.display = cmd.style.display === 'none' ? 'block' : 'none';
+                });
+            });
+
+            for (const command of commands) {
+                const commandDiv = document.createElement('div');
+                commandDiv.classList.add('cmd');
+                commandDiv.innerHTML = `
+                    <h3 class="cmd-title${command.premium_user ? " premium-user\" tip=\"Only premium users can use this command" : ""}${command.premium_guild ? "premium-guild\" tip=\"This command can only be used on premium guilds" : ""}">${command.name}</h3>
+                    <div class="cmd-description">${command.description}<br><br>
+                    <div class="inline">Message usage: <span class="discord-formatting">${command.message_usage.replace("<", "&lt;").replace(">", "&gt;")}</span></div><br>
+                    <div class="inline">Slash usage: <span class="discord-formatting">/${command.slash_usage.replace("<", "&lt;").replace(">", "&gt;")}</span></div><br>
+                    <div class="inline">Aliases: ${command.aliases.length > 0 ? ('<span class="discord-formatting">' + command.aliases.join(', ') + '</span>') : 'None'}</div>
+                    ${command.cooldown ? '<br>Cooldown: ' + command.cooldown + ' second' + (command.cooldown == 1 ? '' : 's') : ''}
+                    </div>
+                `;
+
+                if (command.cooldown) {
+                    // Replace last line with this: "Cooldown: ${command.cooldown} </div>"
+                    
+                }
+
+                // Add event listener for the h3 element of that command
+                commandDiv.querySelector('.cmd-title').addEventListener('click', function() {
+                    commandDiv.querySelector('.cmd-description').style.display = commandDiv.querySelector('.cmd-description').style.display === 'none' ? 'flex' : 'none';
+                });
+
+                groupDiv.appendChild(commandDiv);
             }
-        }
-        var ttb = document.getElementById("ttb");
 
-        // When the user scrolls down 20px from the top of the document, show the button
-        window.onscroll = function () {
-            scrollFunction()
-        };
-
-        function topFunction() {
-            document.body.scrollTop = 0;
-            document.documentElement.scrollTop = 0;
+            return groupDiv;
         }
 
-        function scrollFunction() {
-            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                ttb.style.display = "block";
-            } else {
-                ttb.style.display = "none";
-            }
-        }
+        const dataContainer = document.getElementById('data-container');
+
+        fetch('https://api.killua.dev/commands') // Replace with your API endpoint
+            .then(response => response.json())
+            .then(data => {
+                for (const groupName in data) {
+                    const group = data[groupName];
+                    const groupDiv = createCollapsibleGroup(group.name, group.description, group.commands);
+                    dataContainer.appendChild(groupDiv);
+                }
+            })
+            .catch(error => console.error('API request error:', error));
     </script><br><br><br><br><br><br>
     <div id='pdcl'>
-        <div id="dcl" style="position:absolute; right:50px; bottom:10px;"><a href='/disclaimers' id='dcl'>Disclaimer</a>
+        <div id="dcl" style="position:absolute; right:50px; bottom:10px;"><a href='./disclaimers.html' id='dcl'>Disclaimer</a>
         </div>
     </div>
     <h1></h1>

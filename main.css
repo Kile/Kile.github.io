@@ -1,0 +1,9 @@
+body {
+    background-image: url(assets/main_page_img.png);
+    /* Set image as background for everything, height 100%, centered and adjusted (cropped) to screen size */
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

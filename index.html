@@ -6,10 +6,13 @@
     <meta charset="utf-8">
 
     <title>Killua</title>
-    <link rel="shortcut icon" type="image/png" href="https://cdn.discordapp.com/avatars/756206646396452975/30c2da6b0a777658021cbac239fa5e66.png?size=1024" />
-    <link rel="apple-touch-icon" href="https://cdn.discordapp.com/avatars/756206646396452975/30c2da6b0a777658021cbac239fa5e66.png?size=1024p">
+    <link rel="shortcut icon" type="image/png"
+        href="https://cdn.discordapp.com/avatars/756206646396452975/30c2da6b0a777658021cbac239fa5e66.png?size=1024" />
+    <link rel="apple-touch-icon"
+        href="https://cdn.discordapp.com/avatars/756206646396452975/30c2da6b0a777658021cbac239fa5e66.png?size=1024p">
     <meta name="description" content="Killua: The Discord Bot">
-    <meta name="keywords" content="Killua, Kile, Alkuri, KileAlkuri, Killua.dev, discord, bot, SFW, hxh, hunter x hunter">
+    <meta name="keywords"
+        content="Killua, Kile, Alkuri, KileAlkuri, Killua.dev, discord, bot, SFW, hxh, hunter x hunter">
     <meta name="author" content="N789EX, CirclR, and Kile Alkuri">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="apple-mobile-web-app-capable" content="yes">
@@ -18,70 +21,46 @@
     <meta property="og:title" content="Killua" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://killua.dev" />
-    <meta property="og:image" content="https://cdn.discordapp.com/avatars/756206646396452975/30c2da6b0a777658021cbac239fa5e66.png?size=256" />
-    <meta property="og:description" content="A fun, unique multipurpose bot that’s influenced by your ideas and wishes." />
-    <meta name="theme-color" content="#1400FF">
+    <meta property="og:image"
+        content="https://cdn.discordapp.com/avatars/756206646396452975/30c2da6b0a777658021cbac239fa5e66.png?size=256" />
+    <meta property="og:description"
+        content="A fun, unique multipurpose bot that’s influenced by your ideas and wishes." />
+    <meta name="theme-color" content="#33344C">
 
     <meta name="twitter:card" content="summary_large_image">
 
-
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" crossorigin='anonymous'>
+    <!-- Stylesheet and code for top bar menu-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        crossorigin='anonymous'>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" crossorigin='anonymous'></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js" crossorigin='anonymous'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"
+        crossorigin='anonymous'></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" crossorigin='anonymous'></script>
-    <style>
-        #img1n {
-            background-image: url("https://i.ibb.co/ykzD5p0/33344c.png");
-            /* Full height */
-            height: 100%;
-            background-attachment: fixed;
-            /* Center and scale the image nicely */
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-        
-        html,
-        body {
-            padding: 0;
-            margin: 0;
-        }
-        
-        html {
-            height: 100%;
-        }
-        
-        body {
-            background-color: #151515;
-            min-height: 100%;
-            font: Verdana;
-            text-align: center;
-            max-width: 100%;
-            color: whitesmoke;
-            position: relative;
-        }
-        
-        #navbar {
-            height: 14.3%;
-        }
-    </style>
+
+    <!-- Stylesheet and code for the rest of the page-->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="main.css">
 </head>
 
 <body>
     <nav class="navbar navbar-expand-md bg-dark navbar-dark" id='navbar'>
         <!-- Brand -->
-        <a class="navbar-brand" href="#"><img src="https://cdn.discordapp.com/avatars/756206646396452975/30c2da6b0a777658021cbac239fa5e66.png?size=1024" alt="logo" style="width:40px;"></a>
+        <a class="navbar-brand" href="./index.html"><img
+                src="https://cdn.discordapp.com/avatars/756206646396452975/30c2da6b0a777658021cbac239fa5e66.png?size=1024"
+                alt="logo" style="width:40px;"></a>
 
         <!-- Toggler/collapsibe Button -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-          <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon"></span>
         </button>
 
         <!-- Navbar links -->
         <div class="collapse navbar-collapse" id="collapsibleNavbar">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link" href="https://discord.com/oauth2/authorize?client_id=756206646396452975&scope=bot&permissions=1342531648">Add To Server</a>
+                    <a class="nav-link"
+                        href="https://discord.com/oauth2/authorize?client_id=756206646396452975&scope=bot&permissions=1342531648">Add
+                        To Server</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="https://discord.gg/FdErZCd">Discord Server</a>
@@ -92,78 +71,198 @@
                     <a class="nav-link" href="https://www.patreon.com/KileAlkuri">Patreon</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/commands">Commands</a>
+                    <a class="nav-link" href="./commands.html">Commands</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./contributors.html">The Team</a>
                 </li>
             </ul>
         </div>
     </nav>
-    <div id='img1n' style='display:table; width:100%;'>
-        <div style='display:table-cell; width:100%;'><br><br>
+
+    <div class="container">
+        <div id="text">
+            <div id='title'>
+                <br><br>
+                <script>
+                    if (screen.availHeight >= 750) {
+                        document.write('<br>');
+                    }
+                    if (screen.availHeight >= 1500) {
+                        document.write('<br><br>')
+                    }
+                </script>
+                <h1 id="text">Killua:
+                    The bot that does it <a id="highlight">better</a></h1><br>
+                <script>
+                    if (screen.availHeight >= 750) {
+                        document.write('<br>');
+                    }
+                    if (screen.availHeight >= 1500) {
+                        document.write('<br><br>')
+                    }
+                </script>
+            </div><br>
+            <div id='sc'>
+                <h2>Server Count</h2>
+                <p id="count"></p>
+                <br>
+            </div>
+            <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
             <script>
-                if (screen.availHeight >= 750) {
-                    document.write('<br>');
-                }
-                if (screen.availHeight >= 1500) {
-                    document.write('<br><br>')
-                }
-            </script>
-            <h1 id="txt1" style='font-family:"Times New Roman", Times, Serif;text-align: center; color:white;'>Killua: The Bot That Does it Better</h1><br><br>
-            <script>
-                if (screen.availHeight >= 750) {
-                    document.write('<br>');
-                }
-                if (screen.availHeight >= 1500) {
-                    document.write('<br><br>')
+                $(document).ready(function () {
+                    fetchdata();
+                });
+
+                function fetchdata() {
+                    $.get("https://api.killua.dev/stats", function (data, status, xhr) {
+                        // if (xhr.status === 307 || xhr.status === 308) {
+                        // Handle 308 status code by performing a redirect
+                        // window.location = data.redirectUrl; // Replace 'data.redirectUrl' with the actual URL to redirect to
+                        // } else {
+                        $("#count").html(data.guilds)
+                            .done(function (data) {
+                                $("#count").html(data.guilds || "Error fetching data.");
+                            })
+                            .fail(function (jqXHR, textStatus, errorThrown) {
+                                console.error("Request failed: ", errorThrown);
+                                $("#count").html("Error fetching data.");
+                            });
+                        // }
+                    });
                 }
             </script>
         </div>
-    </div><br>
-    <script>
-        let sh = screen.availHeight;
-        for (var i = 1; i <= 2; i++) {
-            if (sh / i >= 750) {
-                document.write('<br>');
-            }
-        }
-    </script>
-    <div id='sc'>
-        <h2>Server Count</h2><br><br>
-        <p>STILL IN DEVELOPMENT</p>
-    </div><br>
-    <script>
-        let sh = screen.availHeight;
-        for (var i = 1; i <= 2; i++) {
-            if (sh / i >= 1000) {
-                document.write('<br>');
-            }
-        }
-    </script>
-    <a target='_blank' href='https://www.patreon.com/KileAlkuri'><img src='https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Patreon_logo.svg/1024px-Patreon_logo.svg.png' style='width:25px;' class='img-fluid' alt='Patreon'> Patreon</a><br>
-    <a target='_blank' href='https://discord.com/oauth2/authorize?client_id=756206646396452975&scope=bot&permissions=1342531648'><img src='https://cdn.discordapp.com/attachments/765969331343327304/802998645950906408/emote.png' style='width:25px;' class='img-fluid' alt='Invite Bot'> Invite</a>
-    <br>
-    <a target='_blank' href='https://discord.gg/FdErZCd'><img src='https://i.ibb.co/thZdW8K/discord-logo1600.png' style='width:25px;' class='img-fluid' alt='Discord'> Discord Server</a>
-    <br>
-    <a target='_blank' href='/commands'><img src='https://media.discordapp.net/attachments/765969331343327304/803789761977384960/emote.png?width=352&height=352' style='width:25px;' class='img-fluid' alt='Commands'> Commands</a>
-    <br>
-    <script>
-        let sh = screen.availHeight;
-        for (var i = 1; i <= 2; i++) {
-            if (sh / i >= 1000) {
-                document.write('<br>');
-            }
-        }
-    </script><br><br>
-    <a href='/stillindev'>Dashboard</a><br>
-    <a href='/stillindev'>Rankings</a><br>
-    <a href='/stillindev'>FAQs</a><br>
-    <a href='/contributors'>Contributors</a><br>
-    <br><br><br>
-    <div id='pdcl'>
-        <div id="dcl" style="position:absolute; right:50px; bottom:10px;"><a href='/disclaimers' id='dcl'>Disclaimer</a></div>
+        <br><br><br><br><br><br>
+        <div id="buttons">
+            <a target='_blank' href='https://www.patreon.com/KileAlkuri'><img
+                    src='https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Patreon_logo.svg/1024px-Patreon_logo.svg.png'
+                    class='img-fluid' alt='Patreon'> Patreon</a>
+            <a target='_blank'
+                href='https://discord.com/oauth2/authorize?client_id=756206646396452975&scope=bot&permissions=1342531648'><img
+                    src='https://cdn.discordapp.com/attachments/765969331343327304/802998645950906408/emote.png'
+                    class='img-fluid' alt='Invite Bot'> Invite</a>
+            <a target='_blank' href='https://discord.gg/FdErZCd'><img
+                    src='https://i.ibb.co/thZdW8K/discord-logo1600.png' lass='img-fluid' alt='Discord'> Discord
+                Server</a>
+            <a target='_blank' href='./commands.html'><img
+                    src='https://media.discordapp.net/attachments/765969331343327304/803789761977384960/emote.png?width=352&height=352'
+                    class='img-fluid' alt='Commands'>All Commands</a>
+        </div>
     </div>
 
-</body>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const container = document.querySelector('.container');
+            const windowHeight = window.innerHeight;
+            const divHeight = container.offsetHeight;
 
-<h1></h1>
+            // Calculate the number of <br> tags needed to fill the screen
+            const numBrTags = Math.ceil((windowHeight - divHeight) / 40); // 50 is an approximate line height
+
+            // Create and append <br> tags
+            for (let i = 0; i < numBrTags; i++) {
+                const br = document.createElement("br");
+                container.appendChild(br);
+            }
+        });
+    </script>
+
+    <div id="features">
+        <!-- <script src="scroll.js"></script> -->
+        <h1>Features</h1>
+
+        <div class="container">
+            <div class="slide-section" data-position="right">
+                <div class="content">
+                    <h2>Actions</h2>
+                    <p>The <a id="highlight"> most </a> advanced action commands on discord</p>
+                </div>
+                <div class="image">
+                    <img src="assets/features/actions.png" alt="Actions">
+                </div>
+            </div>
+            <div class="slide-section" data-position="left">
+                <div class="content">
+                    <h2>Cards</h2>
+                    <p>Battle & collect with Killua's own “<a id="highlight">Greed Island</a>” themed card game</p>
+                </div>
+                <div class="image">
+                    <img src="assets/features/cards.png" alt="Cards">
+                </div>
+            </div>
+            <div class="slide-section" data-position="right">
+                <div class="content">
+                    <h2>Todo lists</h2>
+                    <p>Powerful todo lists equipped for <a id="highlight">anything</a> (even rickrolls)</p>
+                </div>
+                <div class="image">
+                    <img src="assets/features/todo.png" alt="Todo lists">
+                </div>
+            </div>
+            <div class="slide-section" data-position="left">
+                <div class="content">
+                    <h2>Games</h2>
+                    <p>Challenge your friends to various <a id="highlight">games</a> or play singleplayer</p>
+                </div>
+                <div class="image">
+                    <img src="assets/features/games.png" alt="Games">
+                </div>
+            </div>
+            <div class="slide-section" data-position="right">
+                <div class="content">
+                    <h2>Image manipulation</h2>
+                    <p>Let images descend into <a id="highlight">madness</a> with image manipulation</p>
+                </div>
+                <div class="image">
+                    <img src="assets/features/image_manipulation.png" alt="Image manipulation">
+                </div>
+            </div>
+            <div class="slide-section" data-position="left">
+                <div class="content">
+                    <h2>Tags</h2>
+                    <p>Tags <a id="highlight">built</a> to save time and Rick Astley GIFs</p>
+                </div>
+                <div class="image">
+                    <img src="assets/features/tags.png" alt="Tags">
+                </div>
+            </div>
+            <div class="slide-section" data-position="right">
+                <div class="content">
+                    <h2>And <a id="highlight">much</a> more</h2>
+                    <p>Make use of Killua's over <a id="highlight">100</a> commands</p>
+                </div>
+                <div class="image">
+                    <img src="assets/features/other.png" alt="Others">
+                </div>
+            </div>
+            <!-- Repeat this section for additional slides -->
+        </div>
+        <script>
+            const slideSections = document.querySelectorAll('.slide-section');
+
+            function handleScroll() {
+                slideSections.forEach((section) => {
+                    const sectionTop = section.getBoundingClientRect().top;
+                    if (sectionTop < window.innerHeight / 1.5) {
+                        // Reveal boxes once they reach the middle of the screen
+                        section.style.opacity = 1;
+                        section.style.transform = 'translateY(0)';
+                    }
+                });
+            }
+
+            window.addEventListener('scroll', handleScroll);
+        </script>
+
+        <br><br>
+
+        <div id='pdcl'>
+            <div id="dcl" style="position:absolute; right:50px; bottom:10px;"><a href='./disclaimers.html'
+                    id='dcl'>Disclaimer</a>
+            </div>
+        </div>
+
+</body>
 
 </html>
