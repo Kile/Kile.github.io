@@ -117,6 +117,10 @@ body {
 	display: block;
 }
 
+.command.premium .title, .command.premium-guild .title {
+	color: gold;
+}
+
 .command .premium-guild {
 	display: none;
 
