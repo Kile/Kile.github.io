@@ -1,0 +1,195 @@
+@keyframes flash {
+	0% {
+		filter: brightness(1.5);
+	}
+
+	100% {
+		filter: brightness(1);
+	}
+}
+
+.template {
+	display: none !important;
+}
+
+span {
+	pointer-events: none;
+}
+
+span.susage,
+span.musage {
+	pointer-events: auto;
+}
+
+body {
+	overflow-y: scroll;
+}
+
+.collection {
+	overflow: hidden;
+	max-height: 9em;
+
+	transition: max-height 0.3s;
+	padding: 0px;
+}
+
+.collection .header {
+	position: relative;
+	left: 0px;
+	top: 0px;
+
+	width: 100%;
+	height: 9em;
+
+	padding: 1em;
+	text-align: center;
+}
+
+.collection .header > div {
+	position: relative;
+
+	left: 50%;
+	top: 50%;
+
+	transform: translate(-50%, -50%);
+}
+
+.collection .header > div .title {
+	font-size: 1.4em;
+	margin-bottom: 0.5em;
+}
+
+.collection .header > div .description {
+	display: none;
+}
+
+.collection .header > div .description.short {
+	display: block;
+}
+
+.collection.open {
+	max-height: 1000vh;
+}
+
+.collection.open .header > div .description {
+	display: block;
+}
+
+.collection.open .header > div .description.short {
+	display: none;
+}
+
+.collection.open .header {
+	height: auto;
+}
+
+.collection.open .header > div {
+	height: auto;
+
+	transform: translate(-50%, 0);
+}
+
+.collection.open .cmd {
+	opacity: 1;
+
+	transition: opacity 0.5s;
+}
+
+.command {
+	position: relative;
+	opacity: 0;
+	display: block;
+
+	max-height: 3.4em;
+
+	transition: opacity 0.2s, max-height 1s;
+	overflow: hidden;
+}
+
+.command .premium {
+	display: none;
+
+	vertical-align: middle;
+	color: gold;
+}
+
+.command.premium .premium {
+	display: block;
+}
+
+.command .premium-guild {
+	display: none;
+
+	vertical-align: middle;
+	color: gold;
+}
+
+.command.premium-guild .premium-guild {
+	display: block;
+}
+
+.command.open {
+	max-height: 300em;
+
+	animation-name: flash;
+	animation-duration: 1s;
+}
+
+.command .isopen {
+	display: inline-block;
+	position: absolute;
+
+	width: 1em;
+	height: 1em;
+
+	top: 1em;
+	left: 95%;
+
+	transition: transform 0.2s;
+	transform: rotate(180deg);
+
+	opacity: 0.3;
+}
+
+.command.open .isopen {
+	transform: rotate(0deg);
+}
+
+.command .inline > div {
+	margin: 6px;
+	margin-left: 0px;
+}
+
+.command .inline > span {
+	margin-left: 6px;
+}
+
+.command > .title-box {
+	position: relative;
+
+	font-size: 1.5em;
+	border-bottom: 2px solid #aabbe1;
+}
+
+.hint {
+	position: fixed;
+	border: 2px solid blue;
+	background-color: #3a4ba1;
+
+	border-radius: 5px;
+	box-shadow: -5px -5px 5px 1px black;
+
+	z-index: 999;
+	display: none;
+
+	opacity: 0;
+	transition: opacity 0.5s;
+
+	/*transform: translate(-10%, 10%);*/
+}
+
+.hint.visible {
+	display: block;
+
+	opacity: 0.6;
+}
