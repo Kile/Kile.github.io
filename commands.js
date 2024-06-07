@@ -115,3 +115,44 @@ qevent("click", "*", function(ev, el){
 	hintbox.style.left = ev.x + "px";
 	hintbox.style.top = ev.y + "px";
 });
+
+qevent("keydown", "input.search", function(ev, el){
+	if(!el.value){
+		for(const el of document.body.querySelectorAll(".command")){
+			el.classList.remove("hide");
+			el.parentElement.classList.remove("hide");
+		}
+
+		return ;
+	}
+
+	value = el.value.split(' ').filter(Boolean);
+
+	for(const el of document.body.querySelectorAll(".command")){
+		el.classList.remove("hide");
+		el.parentElement.classList.remove("hide");
+
+		let abort = 0;
+		const innerText = el.innerText.toLowerCase();
+		for(const word of value){
+			if(innerText.split(word)[1]){
+				abort = 1;
+
+				break ;
+			}
+		}
+
+		if(abort)
+			continue ;
+
+		el.classList.add("hide");
+
+		if(el.parentElement.querySelectorAll(".command:not(.hide)")[0]){
+			el.parentElement.classList.remove("hide");
+
+			continue ;
+		}
+
+		el.parentElement.classList.add("hide");
+	}
+});

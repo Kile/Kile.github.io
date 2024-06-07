@@ -25,6 +25,22 @@ body {
 	overflow-y: scroll;
 }
 
+input.search {
+	color: inherit;
+	font-family: inherit;
+	font-size: 1.4em;
+}
+
+.collection.hide {
+	display: none;
+	border: 2px solid red !important;
+}
+
+.command.hide {
+	display: none;
+	border: 2px solid red !important;
+}
+
 .collection {
 	overflow: hidden;
 	max-height: 9em;
