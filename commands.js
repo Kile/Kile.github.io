@@ -58,6 +58,11 @@ async function main(){
 		.map(loadCollection)
 		.map(ki => ki.append(document.body))
 	;
+
+	const loading = document.body.querySelector(".loading");
+	if(loading){
+		loading.classList.add("done");
+	}
 };
 
 window.addEventListener("DOMContentLoaded", main);
@@ -116,7 +121,18 @@ qevent("click", "*", function(ev, el){
 	hintbox.style.top = ev.y + "px";
 });
 
-qevent("keydown", "input.search", function(ev, el){
+qevent("keydown", "input.search", function f(ev, el){
+	if(f.lock)
+		return ;
+
+	f.lock = 1;
+	// add a delay, so it doesn't load after every keydown,
+	// but a bit delay after a key is clicked.
+
+	// the key entered when delaying will be ignored
+	// but el.value holds all the input anyway so it's fine
+	setTimeout(function(){
+	f.lock = 0;
 	if(!el.value){
 		for(const el of document.body.querySelectorAll(".command")){
 			el.classList.remove("hide");
@@ -129,6 +145,7 @@ qevent("keydown", "input.search", function(ev, el){
 	value = el.value.split(' ').filter(Boolean);
 
 	for(const el of document.body.querySelectorAll(".command")){
+		el.classList.add("open");
 		el.classList.remove("hide");
 		el.parentElement.classList.remove("hide");
 
@@ -145,14 +162,18 @@ qevent("keydown", "input.search", function(ev, el){
 		if(abort)
 			continue ;
 
+		el.classList.remove("open");
 		el.classList.add("hide");
 
-		if(el.parentElement.querySelectorAll(".command:not(.hide)")[0]){
+		if(el.parentElement
+			.querySelectorAll(".command:not(.hide)")[0]
+		){
 			el.parentElement.classList.remove("hide");
+			el.parentElement.classList.add("open");
 
 			continue ;
 		}
 
 		el.parentElement.classList.add("hide");
-	}
+	} }, 1000);
 });

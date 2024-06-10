@@ -27,6 +27,7 @@ body {
 
 input.search {
 	color: inherit;
+	background-color: inherit;
 	font-family: inherit;
 	font-size: 1.4em;
 }
@@ -212,4 +213,29 @@ input.search {
 	display: block;
 
 	opacity: 0.6;
+}
+
+@keyframes loading {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(359deg);
+	}
+}
+
+.loading {
+	margin: 5%;
+	animation-name: loading;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+
+	text-align: center;
+	font-size: 6em;
+}
+
+.loading.done {
+	display: none;
 }
