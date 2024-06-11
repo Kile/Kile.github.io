@@ -152,10 +152,14 @@ body {
 
 .discord-formatting {
     /* Discord dark mode background color */
-    background-color: #36393e;
+    background-color: #16191e;
     font-family: whitney,Helvetica Neue,Helvetica,Arial,sans-serif;
     padding: 5px;
-    box-shadow: 0 0 5px white;
+    /*box-shadow: 0 0 5px white;*/
+    border: 2px solid #26292e;
+    border-right: 2px solid #16191e;
+    border-bottom: 2px solid #16191e;
+    border-left: 4px solid #26292e;
 }
 
 /* Add the user image after the text */

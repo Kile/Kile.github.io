@@ -4,7 +4,7 @@
 	}
 
 	100% {
-		filter: brightness(1);
+
 	}
 }
 
@@ -28,8 +28,19 @@ body {
 input.search {
 	color: inherit;
 	background-color: inherit;
+	border-width: 2px;
+	border-style: solid;
 	font-family: inherit;
 	font-size: 1.4em;
+	padding: 0.4em;
+	border-radius: 4px;
+
+	min-width: 0%;
+	transition: min-width 0.5s;
+}
+
+input.search:hover {
+	min-width: 99%;
 }
 
 .collection.hide {
@@ -74,6 +85,8 @@ input.search {
 .collection .header > div .title {
 	font-size: 1.4em;
 	margin-bottom: 0.5em;
+
+	transition: font-size 0.4s, filter 0.2s;
 }
 
 .collection .header > div .description {
@@ -86,6 +99,20 @@ input.search {
 
 .collection.open {
 	max-height: 1000vh;
+}
+
+.collection.open .header > div .title {
+	font-size: 2em;
+	transition: font-size 0.2s;
+
+	border-width: 4px;
+	border-style: solid;
+	border-top: none;
+	border-bottom: none;
+
+	border-radius: 0px;
+
+	filter: brightness(0.8);
 }
 
 .collection.open .header > div .description {
@@ -112,6 +139,19 @@ input.search {
 	transition: opacity 0.5s;
 }
 
+.collection > .isopen {
+	transform: rotate(180deg);
+	position: absolute;
+	right: 1em;
+	top: 1em;
+
+	transition: transform 0.2s;
+}
+
+.collection.open > .isopen {
+	transform: rotate(0deg);	
+}
+
 .command {
 	position: relative;
 	opacity: 0;
@@ -121,6 +161,8 @@ input.search {
 
 	transition: opacity 0.2s, max-height 1s;
 	overflow: hidden;
+
+	filter: brightness(80%);
 }
 
 .command .premium {
@@ -189,13 +231,21 @@ input.search {
 	position: relative;
 
 	font-size: 1.5em;
-	border-bottom: 2px solid #aabbe1;
+	border-bottom-width: 2px;
+	border-bottom-style: solid;
+}
+
+.command .title {
+}
+
+.command.open .title {
+
 }
 
 .hint {
 	position: fixed;
-	border: 2px solid blue;
-	background-color: #3a4ba1;
+	border-width: 2px;
+	border-style: solid;
 
 	border-radius: 5px;
 	box-shadow: -5px -5px 5px 1px black;
@@ -205,6 +255,8 @@ input.search {
 
 	opacity: 0;
 	transition: opacity 0.5s;
+	padding: 0.4em;
+	filter: invert(100%);
 
 	/*transform: translate(-10%, 10%);*/
 }
