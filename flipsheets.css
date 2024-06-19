@@ -78,11 +78,13 @@ h2 {
 }
 
 .ca {
-    float: left;
+    /*float: left;*/
     padding: 0 10px;
+
+    display: inline-block;
 }
 
-#thrc {
+#thrc, .thrc {
     margin: 0px auto;
     display: flex;
     justify-content: center;
@@ -92,4 +94,23 @@ h2 {
     margin: 0px auto;
     display: flex;
     justify-content: center;
+}
+
+/* Modifications */
+.container2 {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+
+    overflow: scroll;
+}
+
+#wrapper {
+    width: 100vw;
+    margin: 0px auto;
+    max-width: unset;
+}
+
+#thrc, .thrc {
+    justify-content: left;
 }
